@@ -1,19 +1,17 @@
 ///entry point///
 import React from 'react';
 import ReactDOM from 'react-dom/client'
+import {BrowserRouter} from 'react-router-dom';
+import MyRoutes from './routes.js'
+
 import "./index.css"
-import Homepage from "./homepage.js"//render homepage
-import { BrowserRouter , Routes,Route} from 'react-router-dom';
-import Game from "./components/tictactoe/index.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 <BrowserRouter>
-    <Routes>
-        <Route path="/" element= {<Homepage/>}/>
-        <Route path="/components/tictactoe" element= {<Game/>}/>
-    </Routes>
+    {MyRoutes}
 </BrowserRouter> );
+
 
 
 
