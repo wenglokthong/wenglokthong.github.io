@@ -1,6 +1,11 @@
 import React from "react";
+import {BrowserRouter, Switch,Routes, Route, Link } from "react-router-dom"; //link to other pages
+
 import "./homepage.css"
-import MyButton from "./components/buttons/button.js";
+import MyButton from "./components/buttons/button.js"
+
+import "./components/tictactoe/index.js"
+import Game from "./components/tictactoe/index.js";
 
 class Homepage extends React.Component
 {
@@ -12,11 +17,12 @@ class Homepage extends React.Component
                 <div className="homepage-intro">
                     Welcome! This 'site' was made using ReactJS as a learning project. I will be using this as a portfolio as I develop it further. It will mostly be random and hopefully interesting stuff that I have done, or want to showcase. Thank you for your visit!
                 </div>
-
-                <div className="homepage-buttons-list">
-                    Click on one of the buttons to see!
-                    <li>{MyButton('TicTacToe')}</li>
-                </div>
+                    <div className="homepage-buttons-list">
+                        Click on one of the buttons to see!
+                        
+                        <Link to = "/components/tictactoe">{MyButton("TicTacToe")}</Link>                    
+                        
+                    </div>
         </div>
         );
     }
