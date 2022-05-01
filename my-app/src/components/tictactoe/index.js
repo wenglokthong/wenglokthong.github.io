@@ -43,7 +43,7 @@ class Board extends React.Component {
   }
 }
 
-class Game extends React.Component {
+export class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -55,6 +55,14 @@ class Game extends React.Component {
       stepNumber: 0,
       xIsNext: true,
     };
+  }
+
+  componentDidMount() {
+    document.body.className = "tictactoe-body";
+  }
+
+  componentWillUnmount() {
+    document.body.className = "body";
   }
 
   handleClick(i) {
@@ -105,7 +113,23 @@ class Game extends React.Component {
     }
 
     return (
-      <div>
+      <div className="tictactoe-body">
+        <div>
+          <h1>React TicTacToe</h1>
+          <p>
+            This simple game of tictactoe is literally the tutorial of React (
+            <a
+              href="https://reactjs.org/tutorial/tutorial.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              link
+            </a>
+            )
+            <br />
+            Click on a square to place your icon, and alternate between X and O.
+          </p>
+        </div>
         <div className="game">
           <div className="game-board">
             <Board

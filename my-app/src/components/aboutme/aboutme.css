@@ -1,0 +1,34 @@
+.aboutme-body
+{
+    
+}
+
+@keyframes linkedin-button-kf {
+    from {
+transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.linkedin-button
+{
+    color: blue;
+    margin-top:2em; 
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.linkedin-button:hover
+{
+
+    animation: linkedin-button-kf 0.2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}

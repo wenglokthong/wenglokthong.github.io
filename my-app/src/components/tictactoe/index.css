@@ -1,6 +1,7 @@
-body {
+.tictactoe-body {
     font: 14px "Century Gothic", Futura, sans-serif;
     margin: 20px;
+    background-color: blanchedalmond;
   }
   
   ol, ul {
