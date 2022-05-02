@@ -1,20 +1,35 @@
 import React from "react";
-import "./universitygameprojects.scss";
-import ImageSlider from "react-simple-image-slider";
+import "./universitygameprojects.css";
+import ImageSlider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+const sliderSettings = {
+  dots: true,
+  infinite: true,
+  centerMode: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  adaptiveHeight: false,
+};
 
-const RagnarokImages = [
-  { url: require("../../assets/images/digipengampictures/ragnarok1.png") },
-  { url: require("../../assets/images/digipengampictures/ragnarok2.png") },
-  { url: require("../../assets/images/digipengampictures/ragnarok3.png") },
+export const RagnarokImages = [
+  { imgSrc: require("../../assets/images/digipengampictures/ragnarok1.png") },
+  { imgSrc: require("../../assets/images/digipengampictures/ragnarok2.png") },
+  { imgSrc: require("../../assets/images/digipengampictures/ragnarok3.png") },
 ];
 
-export const RagnarokElement = (
-  <div className="image-slider">
-    <ImageSlider
-      width={100}
-      height={100}
-      showBullets={true}
-      images={RagnarokImages}
-    />
-  </div>
-);
+export const GameElement = (images) => {
+  return (
+    <div className="image-slider">
+      <ImageSlider {...sliderSettings}>
+        {images.map((arrayElement, arrayIndex) => {
+          return (
+            <div className="image-single" key={arrayIndex}>
+              <img src={arrayElement.imgSrc} alt="" />
+            </div>
+          );
+        })}
+      </ImageSlider>
+    </div>
+  );
+};
