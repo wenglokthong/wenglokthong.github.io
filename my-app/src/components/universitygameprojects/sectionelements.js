@@ -1,16 +1,7 @@
 import React from "react";
 import "./universitygameprojects.css";
-import ImageSlider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-const sliderSettings = {
-  dots: true,
-  infinite: true,
-  centerMode: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  adaptiveHeight: false,
-};
+import AliceCarousel from 'react-alice-carousel'
+import "react-alice-carousel/lib/alice-carousel.css";
 
 export const RagnarokImages = [
   { imgSrc: require("../../assets/images/digipengampictures/ragnarok1.png") },
@@ -18,18 +9,18 @@ export const RagnarokImages = [
   { imgSrc: require("../../assets/images/digipengampictures/ragnarok3.png") },
 ];
 
-export const GameElement = (images) => {
+export const RagnarokText = 'Ragnarok is an ascii';
+
+export const GameImageSlider = (images) => {
   return (
     <div className="image-slider">
-      <ImageSlider {...sliderSettings}>
-        {images.map((arrayElement, arrayIndex) => {
+      <AliceCarousel>
+        {images.map((arrayElement,index) => {
           return (
-            <div className="image-single" key={arrayIndex}>
-              <img src={arrayElement.imgSrc} alt="" />
-            </div>
+              <img key={index} className="image-single" src={arrayElement.imgSrc} alt="" />
           );
         })}
-      </ImageSlider>
+      </AliceCarousel>
     </div>
   );
 };
