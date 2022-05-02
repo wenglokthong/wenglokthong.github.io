@@ -2,7 +2,7 @@ import React from "react";
 import { MyHomeButton } from "../buttons/button";
 import "./aboutme.css";
 import "../../index.css";
-import linkedinlogo from "../../images/linkedin-logo.png";
+import linkedinlogo from "../../assets/images/linkedin-logo.png";
 
 export class AboutMe extends React.Component {
   render() {
