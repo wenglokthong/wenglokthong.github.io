@@ -1,24 +1,37 @@
 import React from "react";
+import { MyButton, MyHomeButton } from "../buttons/button.js";
+import { Link } from "react-router-dom";
+
+import { parentRoutePath } from "./sectionelements";
+
 import "./universitygameprojects.css";
 import "./sectionelements.js";
-import { MyHomeButton } from "../buttons/button.js";
-import { GameImageSlider, RagnarokImages,RagnarokText } from "./sectionelements.js";
 
-function GameSection(title,image,text) {
-  return (
-    <div>
-    <div className='game-title'>{title}</div>
-    <div >{image}</div>
-    <div className='game-text'>{text}</div></div>
-  );
-}
+const GameSectionsLinkArray = [
+  {
+    routePath: parentRoutePath + "ragnarok",
+    buttonName: "Ragnarok",
+    thumbnailPath: "",
+  },
+  {
+    routePath: parentRoutePath + "zeroday",
+    buttonName: "Zero-Day",
+    thumbnailPath: "",
+  },
+];
 
 export class UniversityGameProjects extends React.Component {
   render() {
     return (
-      <div className="universitygameprojects-body">
-         <div>{GameSection("Year 1: Ragnarok",GameImageSlider(RagnarokImages),RagnarokText)}</div>
-         <div>{GameSection("Year 1.5: ZER0-DAY",GameImageSlider(RagnarokImages))}</div>
+      <div>
+        {GameSectionsLinkArray.map((element, index) => {
+          return (
+            <div key={index}>
+              <Link to={element.routePath}>{MyButton(element.buttonName)}</Link>
+              <img src={element.thumbnailPath} alt="" />
+            </div>
+          );
+        })}
         <div>{MyHomeButton()}</div>
       </div>
     );
