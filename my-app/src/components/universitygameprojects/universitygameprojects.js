@@ -10,11 +10,13 @@ import "./sectionelements.js";
 const GameSectionsLinkArray = [
   {
     routePath: parentRoutePath + "ragnarok",
+    brief: "ragnarok brief",
     buttonName: "Ragnarok",
     thumbnailPath: "",
   },
   {
     routePath: parentRoutePath + "zeroday",
+    brief: "",
     buttonName: "Zero-Day",
     thumbnailPath: "",
   },
@@ -24,10 +26,13 @@ export class UniversityGameProjects extends React.Component {
   render() {
     return (
       <div>
+        <div>Intro and brief</div>
+
         {GameSectionsLinkArray.map((element, index) => {
           return (
-            <div key={index}>
+            <div key={index} style={{ marginBottom: "1em" }}>
               <Link to={element.routePath}>{MyButton(element.buttonName)}</Link>
+              {element.brief}
               <img src={element.thumbnailPath} alt="" />
             </div>
           );

@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import AliceCarousel from "react-alice-carousel";
 
 import { MyButton } from "../buttons/button";
-import { RagnarokImages, RagnarokText } from "./content";
+import {
+  RagnarokImages,
+  RagnarokText,
+  ZeroDayImages,
+  ZeroDayText,
+} from "./content";
 
 import "./universitygameprojects.css";
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -24,15 +29,20 @@ export const GameSectionArray = [
   {
     gameTitle: "ZeroDay",
     gameHeader: "Year 1: ZER0-DAY",
-    gameImages: RagnarokImages,
-    gameText: RagnarokText,
+    gameImages: ZeroDayImages,
+    gameText: ZeroDayText,
   },
 ];
 
 export const GameImageSlider = (images) => {
   return (
     <div className="image-slider">
-      <AliceCarousel>
+      <AliceCarousel
+        autoPlay={true}
+        animationDuration={400}
+        autoPlayInterval={3000}
+        infinite={true}
+      >
         {images.map((arrayElement, index) => {
           return (
             <img
@@ -54,6 +64,16 @@ export function GameSection(props) {
       <div style={{ fontSize: "12px" }}>
         <div className="game-header">{props.gameHeader}</div>
         <div>{GameImageSlider(props.gameImages)}</div>
+        <div
+          style={{
+            fontStyle: "italic",
+            fontSize: "1.5em",
+            textAlign: "center",
+            marginBottom: "1em",
+          }}
+        >
+          Hover to focus on image. Use arrows or bullets to scroll through.
+        </div>
         <div className="game-text">{props.gameText}</div>
         {backButton}
       </div>
