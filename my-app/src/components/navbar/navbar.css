@@ -4,7 +4,6 @@
     position: fixed;
     bottom:0%;
     z-index: 1000;
-    overflow: hidden;
     display: flex;
     transition: 1s;
 
@@ -12,8 +11,7 @@
 
 .navbar:hover
 {
-    width: 5vw;
-    height: 5vh;
+cursor:pointer;
 }
 
 .navbar-icon
@@ -23,7 +21,8 @@
     object-fit: contain;
 }
 
-.navbar-icon:hover
+.navbar-buttons
 {
-
+    position:absolute;
+    bottom:100%;
 }

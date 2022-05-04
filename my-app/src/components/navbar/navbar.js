@@ -24,8 +24,7 @@ export const NavBar = () => {
         src={require("../../assets/images/navbar/tripledots.png")}
         alt=""
       />
-      <div>
-        {" "}
+      <div className="navbar-buttons">
         <MyHomeButton />
         <MyBackButton />
       </div>
