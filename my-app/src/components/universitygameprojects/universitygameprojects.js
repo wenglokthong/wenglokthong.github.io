@@ -37,7 +37,9 @@ export class UniversityGameProjects extends React.Component {
             </div>
           );
         })}
-        <div>{MyHomeButton()}</div>
+        <div>
+          <MyHomeButton />
+        </div>
       </div>
     );
   }

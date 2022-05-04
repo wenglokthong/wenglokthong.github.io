@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import AliceCarousel from "react-alice-carousel";
 
-import { MyButton } from "../buttons/button";
+import { MyBackButton } from "../buttons/button";
 import {
   RagnarokImages,
   RagnarokText,
@@ -14,10 +13,6 @@ import "./universitygameprojects.css";
 import "react-alice-carousel/lib/alice-carousel.css";
 
 export const parentRoutePath = "/components/universitygameprojects/";
-
-const backButton = (
-  <Link to={parentRoutePath.slice(0, -1)}>{MyButton("Back")}</Link>
-);
 
 export const GameSectionArray = [
   {
@@ -75,7 +70,7 @@ export function GameSection(props) {
           Hover to focus on image. Use arrows or bullets to scroll through.
         </div>
         <div className="game-text">{props.gameText}</div>
-        {backButton}
+        <MyBackButton />
       </div>
     )
   );
