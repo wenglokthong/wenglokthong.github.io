@@ -1,5 +1,6 @@
 import "./navbar.css";
 import { MyHomeButton, MyBackButton } from "../buttons/button";
+import { useState } from "react";
 
 //inline 'hover' does not work HMMM
 // const navbarStyle = {
@@ -17,17 +18,23 @@ import { MyHomeButton, MyBackButton } from "../buttons/button";
 // };
 
 export const NavBar = () => {
+  const [navState, setNavState] = useState(false);
+
   return (
     <div className="navbar">
       <img
         className="navbar-icon"
         src={require("../../assets/images/navbar/tripledots.png")}
         alt=""
+        onMouseEnter={() => setNavState(!navState)}
       />
-      <div className="navbar-buttons">
-        <MyHomeButton />
-        <MyBackButton />
-      </div>
+
+      {navState && (
+        <div className="navbar-buttons">
+          <MyHomeButton />
+          <MyBackButton />
+        </div>
+      )}
     </div>
   );
 };
