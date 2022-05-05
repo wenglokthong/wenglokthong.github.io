@@ -32,7 +32,7 @@ class Homepage extends React.Component {
                 <Link to="/components/aboutme">{MyButton("About Me")}</Link>
               </li>
               <li>
-                <Link to="/components/universitygameprojects">
+                <Link to="/components/universitygameprojects/intro">
                   {MyButton("University Game Projects")}
                 </Link>
               </li>

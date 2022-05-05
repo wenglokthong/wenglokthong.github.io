@@ -12,8 +12,6 @@ import {
 import "./universitygameprojects.css";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-export const parentRoutePath = "/components/universitygameprojects/";
-
 export const GameSectionArray = [
   {
     gameTitle: "Ragnarok",
@@ -56,7 +54,7 @@ export const GameImageSlider = (images) => {
 export function GameSection(props) {
   return (
     props && (
-      <div style={{ fontSize: "12px" }}>
+      <div>
         <div className="game-header">{props.gameHeader}</div>
         <div>{GameImageSlider(props.gameImages)}</div>
         <div

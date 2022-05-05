@@ -1,4 +1,5 @@
 ///entry point///
+import { hot } from "react-hot-loader/root";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { HashRouter } from "react-router-dom";
@@ -8,3 +9,5 @@ import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<HashRouter>{MyRoutes}</HashRouter>);
+
+export default hot(root);
