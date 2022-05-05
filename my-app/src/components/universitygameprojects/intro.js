@@ -8,15 +8,17 @@ const parentRoutePath = "/components/universitygameprojects/";
 const GameSectionsLinkArray = [
   {
     routePath: parentRoutePath + "ragnarok",
-    brief: "Ragnarok is a top-down shooter made using ASCII graphics",
+    brief:
+      "Ragnarok is a top-down shooter made using ASCII graphics. Shoot enemies, collect powerups, and survive as long as possible for the highest score!",
     linkName: "GAM100: Ragnarok",
-    thumbnailPath: "",
+    thumbnailPath: require("../../assets/images/digipengampictures/ragnarok2.png"),
   },
   {
     routePath: parentRoutePath + "zeroday",
-    brief: "",
-    buttonName: "Zero-Day",
-    thumbnailPath: "",
+    brief:
+      "A 2D multi-directional fast paced shooter game where the player takes control of a digital virus and journey through progressively harder stages filled with enemies that require specific clear conditions.",
+    linkName: "GAM150: ZER0-DAY",
+    thumbnailPath: require("../../assets/images/digipengampictures/ragnarok2.png"),
   },
 ];
 
@@ -33,16 +35,14 @@ const summary = (
     </div>
     <p style={{ fontSize: "1.2em" }}>
       This section is a collection of the game projects I have done in my course
-      of university. These game projects (abbreviated as{" "}
+      of university. These game projects (abbreviated as
       <i>
         GAM {"<"}Level{">"}
       </i>
-      ) involves building a game using a custom developed engine, in a team of
-      three or more. On a side note, there are minor projects that I have done
-      in other modules using commercial engines like Unreal, but I will not be
-      putting them here because those are more of a "learning how to use Unreal"
-      type of projects.
-      <br style={{ marginTop: "1em" }} />
+      ) involves building a game of our choice using a custom developed engine ,
+      in a team of three or more. Of course, the game will have to meet the
+      module's requirements in terms of technical, design and art (if any) .
+      <div style={{ marginTop: "1em" }} />
       Below are the links that redirect you to individual pages of the projects
       in detail, coupled together with my own thoughts and experiences. Do check
       them out!
@@ -62,18 +62,47 @@ export class UniversityGameProjectsIntro extends React.Component {
         }}
       >
         <div>{summary}</div>
-
-        {GameSectionsLinkArray.map((element, index) => {
-          return (
-            <div key={index} style={{ marginBottom: "1em" }}>
-              <Link style={{ fontSize: "2em" }} to={element.routePath}>
-                {element.linkName}
-              </Link>
-              <div>{element.brief}</div>
-              <img src={element.thumbnailPath} alt="" />
-            </div>
-          );
-        })}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            textAlign: "left",
+            justifyContent: "left",
+          }}
+        >
+          {GameSectionsLinkArray.map((element, index) => {
+            return (
+              <div
+                key={index}
+                style={{
+                  marginBottom: "1em",
+                  marginRight: "3em",
+                  display: "flex",
+                  flexDirection: "column",
+                  maxWidth: "25em",
+                  maxHeight: "25em",
+                }}
+              >
+                <div>
+                  <Link style={{ fontSize: "2em" }} to={element.routePath}>
+                    {element.linkName}
+                  </Link>
+                </div>
+                <div>{element.brief}</div>
+                <img
+                  style={{
+                    height: "10em",
+                    width: "auto",
+                    objectFit: "contain",
+                    marginTop: "2em",
+                  }}
+                  src={element.thumbnailPath}
+                  alt=""
+                />
+              </div>
+            );
+          })}
+        </div>
 
         <div>
           <MyHomeButton />

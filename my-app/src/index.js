@@ -8,6 +8,9 @@ import MyRoutes from "./routes.js";
 import "./index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<HashRouter>{MyRoutes}</HashRouter>);
 
-export default hot(root);
+const App = () => <HashRouter>{MyRoutes}</HashRouter>;
+
+root.render(<App />);
+
+export default hot(App);

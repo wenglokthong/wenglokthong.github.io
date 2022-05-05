@@ -15,13 +15,13 @@ import "react-alice-carousel/lib/alice-carousel.css";
 export const GameSectionArray = [
   {
     gameTitle: "Ragnarok",
-    gameHeader: "Year 1: Ragnarok",
+    gameHeader: "Ragnarok",
     gameImages: RagnarokImages,
     gameText: RagnarokText,
   },
   {
     gameTitle: "ZeroDay",
-    gameHeader: "Year 1: ZER0-DAY",
+    gameHeader: "ZER0-DAY",
     gameImages: ZeroDayImages,
     gameText: ZeroDayText,
   },
@@ -30,7 +30,7 @@ export const GameSectionArray = [
 export const GameImageSlider = (images) => {
   return (
     <div className="image-slider">
-      <AliceCarousel
+      {/* <AliceCarousel
         autoPlay={true}
         animationDuration={400}
         autoPlayInterval={3000}
@@ -46,7 +46,7 @@ export const GameImageSlider = (images) => {
             />
           );
         })}
-      </AliceCarousel>
+      </AliceCarousel> */}
     </div>
   );
 };
