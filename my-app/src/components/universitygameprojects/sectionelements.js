@@ -38,7 +38,7 @@ export const GameSectionArray = [
 export const GameImageSlider = (images) => {
   return (
     <div className="image-slider">
-      {/* <AliceCarousel
+      <AliceCarousel
         autoPlay={true}
         animationDuration={400}
         autoPlayInterval={3000}
@@ -46,15 +46,20 @@ export const GameImageSlider = (images) => {
       >
         {images.map((arrayElement, index) => {
           return (
-            <img
-              key={index}
-              className="image-single"
-              src={arrayElement.imgSrc}
-              alt=""
-            />
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <img
+                key={index}
+                className="image-single"
+                src={arrayElement.imgSrc}
+                alt=""
+              />
+              <div style={{ margin: "auto", fontStyle: "italic" }}>
+                {arrayElement.imgInfo}
+              </div>
+            </div>
           );
         })}
-      </AliceCarousel> */}
+      </AliceCarousel>
     </div>
   );
 };
