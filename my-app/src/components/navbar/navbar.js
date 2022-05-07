@@ -21,12 +21,15 @@ export const NavBar = () => {
   const [navState, setNavState] = useState(false);
 
   return (
-    <div className="navbar">
+    <div
+      className="navbar"
+      onMouseEnter={() => setNavState(true)}
+      onMouseLeave={() => setNavState(false)}
+    >
       <img
         className="navbar-icon"
         src={require("../../assets/images/navbar/tripledots.png")}
         alt=""
-        onMouseEnter={() => setNavState(!navState)}
       />
 
       {navState && (

@@ -7,6 +7,8 @@ import {
   RagnarokText,
   ZeroDayImages,
   ZeroDayText,
+  GlowingUnderImages,
+  GLowingUnderText,
 } from "./content";
 
 import "./universitygameprojects.css";
@@ -24,6 +26,12 @@ export const GameSectionArray = [
     gameHeader: "ZER0-DAY",
     gameImages: ZeroDayImages,
     gameText: ZeroDayText,
+  },
+  {
+    gameTitle: "GlowingUnder",
+    gameHeader: "Glowing Under",
+    gameImages: GlowingUnderImages,
+    gameText: GLowingUnderText,
   },
 ];
 

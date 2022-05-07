@@ -20,6 +20,13 @@ const GameSectionsLinkArray = [
     linkName: "GAM150: ZER0-DAY",
     thumbnailPath: require("../../assets/images/digipengampictures/ragnarok2.png"),
   },
+  {
+    routePath: parentRoutePath + "glowingunder",
+    brief:
+      "A cinematic puzzle platformer about a restless firefly who journeys underground to rescue a baby firefly and find out what he’s living for.",
+    linkName: "GAM200/250: Glowing Under",
+    thumbnailPath: require("../../assets/images/digipengampictures/ragnarok2.png"),
+  },
 ];
 
 const summary = (

@@ -13,5 +13,9 @@ export const gameroutes = (
       path="zeroday"
       element={FindGameSection(GameSectionArray, "ZeroDay")}
     />
+    <Route
+      path="glowingunder"
+      element={FindGameSection(GameSectionArray, "GlowingUnder")}
+    />
   </Routes>
 );
