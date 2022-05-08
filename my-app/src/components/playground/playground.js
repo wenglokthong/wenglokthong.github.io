@@ -1,30 +1,7 @@
 import React from "react";
 import "./playground.css";
+import { FontSlider } from "./fontSlider";
 import { MyHomeButton } from "../buttons/button";
-
-class RangeSlider extends React.Component {
-  state = {
-    value: 50,
-  };
-
-  handleChange = (event) => {
-    this.setState({ value: event.target.value });
-  };
-
-  render() {
-    return (
-      <div style={{ fontSize: this.state.value.toString() + "px" }}>
-        <input
-          type="range"
-          onChange={this.handleChange}
-          min="0"
-          max="100"
-        ></input>
-        {this.state.value}
-      </div>
-    );
-  }
-}
 
 export class Playground extends React.Component {
   render() {
@@ -34,7 +11,7 @@ export class Playground extends React.Component {
           This section is used to play around with random functionalities.
         </div>
         <div className="playground-playground">
-          <RangeSlider />
+          <FontSlider />
         </div>
         <div>{MyHomeButton()}</div>
       </div>
