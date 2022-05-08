@@ -1,4 +1,5 @@
-.cssplayground-rangeslider
+.playground-widgets
 {
-
+  display:flex;
+  flex-direction: column;
 }
