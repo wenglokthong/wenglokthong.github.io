@@ -67,9 +67,10 @@ export const RagnarokText = (
           textDecoration: "underline",
         }}
       >
-        Project experience
+        Post Mortem
       </div>
-      Just a small and fun project!
+      To be honest, I can't really remember any significant ups or downs during
+      the course of this project, but it was fun nonetheless.
     </div>
   </div>
 );
@@ -165,8 +166,16 @@ export const ZeroDayText = (
           textDecoration: "underline",
         }}
       >
-        Experience
+        Post Mortem
       </div>
+      Rough start due to inexperience with using C-styled libraries (AlphaEngine
+      was a blackbox and the documentation was <s>horrible</s> not enough) and
+      game programming. We managed to get something working out only at around
+      the half sem point, and the rest of the semester was spent throwing
+      everything together and duct-taping our game up.
+      <br />
+      Suprisingly, we managed to produce something satisfactory (to us). <br />
+      Rough but memorable project!
     </div>
   </div>
 );
@@ -189,6 +198,14 @@ export const GlowingUnderImages = [
 export const GLowingUnderText = (
   <div style={{ fontSize: "1em" }}>
     <div>
+      <a
+        href="https://games.digipen.edu/games/glowing-under"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Download the game here
+      </a>
+      <br />
       <br />
       Glowing Under is a puzzle platformer developed using C/C++ in a team of
       nine, within a span of about 8 months.
@@ -207,7 +224,10 @@ export const GLowingUnderText = (
         <li>Experience cinematics and storytelling while playing the game</li>
         <li>Outstanding art!</li>
       </ul>
-      <u style={{ fontWeight: "bold" }}>Development takeaways</u>
+      <u style={{ fontWeight: "bold" }}>Development</u>
+      <br />
+      It's hard to list down every single feature and aspect of the project, so
+      I will only list down notable ones.
       <ul>
         <li>
           Custom Engine
@@ -245,6 +265,7 @@ export const GLowingUnderText = (
             <li>...</li>
           </ul>
         </li>
+        <li>Dialogue System</li>
         <li>Fmod for audio</li>
       </ul>
       <u style={{ fontWeight: "bold" }}>Role</u>
@@ -255,10 +276,139 @@ export const GLowingUnderText = (
         Contributions
         <ul>
           <li>Setting up custom physics system in the game</li>
-          <li>Gameplay AI logic</li>
+          <li>Gameplay mechanics</li>
           <li>Ad hoc taskings</li>
         </ul>
       </div>
     </div>
+    <div
+      style={{
+        marginTop: "1em",
+        fontWeight: "bold",
+        textDecoration: "underline",
+      }}
+    >
+      Post Mortem
+    </div>
+    Overall, it was a new experience working with designers and artists that
+    were not from our course. The journey was fun with a great team.
+    <br />
+    Learnt alot about 2D physics, especially when I had to set up the physics
+    system from scratch. (For anyone who is interested in learning 2D physics,
+    google 'Randy Ghaul' or 'Erin Catto', they write very good articles and
+    tutorials).
+  </div>
+);
+
+export const RRRImages = [
+  {
+    imgSrc: require("../../assets/images/digipengampictures/ragnarok1.png"),
+    imgInfo: "",
+  },
+  {
+    imgSrc: require("../../assets/images/digipengampictures/ragnarok2.png"),
+    imgInfo: "",
+  },
+  {
+    imgSrc: require("../../assets/images/digipengampictures/ragnarok3.png"),
+    imgInfo: "",
+  },
+];
+
+export const RRRText = (
+  <div style={{ fontSize: "1em" }}>
+    <div>
+      <br />
+      <br />
+      Glowing Under is a puzzle platformer developed using C/C++ in a team of
+      nine, within a span of about 8 months.
+      <br />
+      It was the first GAM project where the team had to develop a game using
+      our own <i>custom engine</i>. Also, we had the opportunity to work with
+      designers and artists from the BAGD and BFA degree respectively.
+    </div>
+    <div style={{ marginTop: "1em" }}>
+      <u style={{ fontWeight: "bold" }}>About the game</u>
+      <ul>
+        <li>Explore an underground cave by walking or flying</li>
+        <li>Interact with the environment with your light puff</li>
+        <li>Platform and entities with variety of mechanics</li>
+        <li>Light up totems and torches along the way </li>
+        <li>Experience cinematics and storytelling while playing the game</li>
+        <li>Outstanding art!</li>
+      </ul>
+      <u style={{ fontWeight: "bold" }}>Development</u>
+      <br />
+      It's hard to list down every single feature and aspect of the project, so
+      I will only list down notable ones.
+      <ul>
+        <li>
+          Custom Engine
+          <ul>
+            <li>Entity Component System(ECS) Framework</li>
+            <li>Native scripting</li>
+            <li>Property reflection using RTTR library</li>
+            <li>...</li>
+          </ul>
+        </li>
+        <li>
+          Custom Editor made using Dear IMGui
+          <ul>
+            <li>Drag and drop</li>
+            <li>Timeline and animator</li>
+            <li>Sprite tiling</li>
+            <li>...</li>
+          </ul>
+        </li>
+        <li>
+          Custom 2D physics system
+          <ul>
+            <li>Collision detection and resolution</li>
+            <li>Box,Circle,Polygon collider shapes support</li>
+            <li>Dynamic AABB narrow phase optimization</li>
+            <li>...</li>
+          </ul>
+        </li>
+        <li>
+          2D graphics
+          <ul>
+            <li>Batch rendering</li>
+            <li>Lighting</li>
+            <li>Fonts</li>
+            <li>...</li>
+          </ul>
+        </li>
+        <li>Dialogue System</li>
+        <li>Fmod for audio</li>
+      </ul>
+      <u style={{ fontWeight: "bold" }}>Role</u>
+      <div>
+        Official Role: Physics and Collision Champion
+        <br />
+        <br />
+        Contributions
+        <ul>
+          <li>Setting up custom physics system in the game</li>
+          <li>Gameplay mechanics</li>
+          <li>Ad hoc taskings</li>
+        </ul>
+      </div>
+    </div>
+    <div
+      style={{
+        marginTop: "1em",
+        fontWeight: "bold",
+        textDecoration: "underline",
+      }}
+    >
+      Post Mortem
+    </div>
+    Overall, it was a new experience working with designers and artists that
+    were not from our course. The journey was fun with a great team.
+    <br />
+    Learnt alot about 2D physics, especially when I had to set up the physics
+    system from scratch. (For anyone who is interested in learning 2D physics,
+    google 'Randy Ghaul' or 'Erin Catto', they write very good articles and
+    tutorials).
   </div>
 );

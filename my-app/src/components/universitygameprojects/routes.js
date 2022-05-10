@@ -17,5 +17,9 @@ export const gameroutes = (
       path="glowingunder"
       element={FindGameSection(GameSectionArray, "GlowingUnder")}
     />
+    <Route
+      path="rapidridefight"
+      element={FindGameSection(GameSectionArray, "RRR")}
+    />
   </Routes>
 );

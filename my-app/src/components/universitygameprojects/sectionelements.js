@@ -9,6 +9,8 @@ import {
   ZeroDayText,
   GlowingUnderImages,
   GLowingUnderText,
+  RRRImages,
+  RRRText,
 } from "./content";
 
 import "./universitygameprojects.css";
@@ -32,6 +34,12 @@ export const GameSectionArray = [
     gameHeader: "Glowing Under",
     gameImages: GlowingUnderImages,
     gameText: GLowingUnderText,
+  },
+  {
+    gameTitle: "RRR",
+    gameHeader: "Rapid Ride Fight",
+    gameImages: RRRImages,
+    gameText: RRRText,
   },
 ];
 

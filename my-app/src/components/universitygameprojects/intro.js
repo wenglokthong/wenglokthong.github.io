@@ -27,6 +27,13 @@ const GameSectionsLinkArray = [
     linkName: "GAM200/250: Glowing Under",
     thumbnailPath: require("../../assets/images/digipengampictures/ragnarok2.png"),
   },
+  {
+    routePath: parentRoutePath + "rapidridefight",
+    brief:
+      "A cinematic puzzle platformer about a restless firefly who journeys underground to rescue a baby firefly and find out what he’s living for.",
+    linkName: "GAM300/350: Rapid Ride Fight",
+    thumbnailPath: require("../../assets/images/digipengampictures/ragnarok2.png"),
+  },
 ];
 
 const summary = (
@@ -42,7 +49,7 @@ const summary = (
     </div>
     <p style={{ fontSize: "1.2em" }}>
       This section is a collection of the game projects I have done in my course
-      of university. These game projects (abbreviated as
+      of university. These game projects (abbreviated as{" "}
       <i>
         GAM {"<"}Level{">"}
       </i>
@@ -64,7 +71,7 @@ export class UniversityGameProjectsIntro extends React.Component {
         style={{
           display: "flex",
           margin: "auto",
-          textAlign: "center",
+          textAlign: "left",
           flexDirection: "column",
         }}
       >
@@ -73,7 +80,9 @@ export class UniversityGameProjectsIntro extends React.Component {
           style={{
             display: "flex",
             flexDirection: "row",
+            flexWrap: "wrap",
             textAlign: "left",
+            maxWidth: "100vw",
             justifyContent: "left",
           }}
         >
