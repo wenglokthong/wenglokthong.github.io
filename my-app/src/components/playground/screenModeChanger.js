@@ -8,8 +8,8 @@ export const ScreenModeChanger = (props) => {
     props.setIsLightMode(e.target.checked);
   };
   return (
-    <div className="playground-widgets">
-      Light mode toggle
+    <div>
+      <div className="playground-widgets-title">Light mode toggle</div>
       <input
         type="checkbox"
         onClick={handleChange}

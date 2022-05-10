@@ -1,4 +1,11 @@
+/*top level css*/
+
 body
 {
-    background-color:bisque;
+    background-color:#2b2045;
+    color:white;
+}
+
+a{
+    color:lightblue;
 }

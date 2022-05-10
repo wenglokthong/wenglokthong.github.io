@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom"; //link to other pages
 
 import "./homepage.css";
 import "../../index.css";
-import { MyButton } from "../buttons/button.js";
+import { HomepageLinks } from "./homepagelinks";
 
 class Homepage extends React.Component {
   componentDidMount() {
@@ -24,29 +23,7 @@ class Homepage extends React.Component {
           and hopefully interesting stuff that I have done, or want to showcase.
           Thank you for your visit!
         </div>
-        <div className="homepage-buttons-list">
-          Click on one of the buttons to check it out!
-          <div>
-            <ul>
-              <li>
-                <Link to="/components/aboutme">{MyButton("About Me")}</Link>
-              </li>
-              <li>
-                <Link to="/components/universitygameprojects/intro">
-                  {MyButton("University Game Projects")}
-                </Link>
-              </li>
-              <li>
-                <Link to="/components/tictactoe">{MyButton("TicTacToe")}</Link>
-              </li>
-              <li>
-                <Link to="/components/playground">
-                  {MyButton("Playground")}
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <HomepageLinks />
       </div>
     );
   }

@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./playground.css";
 export class FontSlider extends React.Component {
   constructor(props) {
     super(props);
@@ -15,13 +15,13 @@ export class FontSlider extends React.Component {
 
   render() {
     return (
-      <div className="playground-widgets">
-        Font size changer
+      <div>
+        <div className="playground-widgets-title">Font size changer</div>
         <input
           type="range"
           onChange={this.handleChange}
-          min="0"
-          max="100"
+          min="10"
+          max="72"
           value={this.state.value}
         ></input>
         {this.state.value}

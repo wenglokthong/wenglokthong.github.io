@@ -19,17 +19,10 @@ const MyRoutes = (
     <div style={{ margin: "2em" }}>
       <Routes>
         <Route path="/" element={<Homepage />} />
+
         <Route path="/components/tictactoe" element={<Game />} />
         <Route path="/components/aboutme" element={<AboutMe />} />
         <Route path="/components/playground" element={<Playground />} />
-        {/* <Route
-        path="/components/universitygameprojects/ragnarok"
-        element={FindGameSection(GameSectionArray, "Ragnarok")}
-      />
-      <Route
-        path="/components/universitygameprojects/zeroday"
-        element={FindGameSection(GameSectionArray, "ZeroDay")}
-      /> */}
         <Route
           path="/components/universitygameprojects/*"
           element={<UniversityGameProjects />}

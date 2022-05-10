@@ -259,15 +259,6 @@ export const GLowingUnderText = (
           <li>Ad hoc taskings</li>
         </ul>
       </div>
-      <div
-        style={{
-          marginTop: "1em",
-          fontWeight: "bold",
-          textDecoration: "underline",
-        }}
-      >
-        Project highlights
-      </div>
     </div>
   </div>
 );

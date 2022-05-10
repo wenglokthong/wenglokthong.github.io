@@ -88,24 +88,29 @@ export class UniversityGameProjectsIntro extends React.Component {
                   flexDirection: "column",
                   maxWidth: "25em",
                   maxHeight: "25em",
+                  justifyContent: "space-between",
                 }}
               >
                 <div>
-                  <Link style={{ fontSize: "2em" }} to={element.routePath}>
-                    {element.linkName}
-                  </Link>
+                  <div>
+                    <Link style={{ fontSize: "2em" }} to={element.routePath}>
+                      {element.linkName}
+                    </Link>
+                  </div>
+                  <div>{element.brief}</div>
                 </div>
-                <div>{element.brief}</div>
-                <img
-                  style={{
-                    height: "10em",
-                    width: "auto",
-                    objectFit: "contain",
-                    marginTop: "2em",
-                  }}
-                  src={element.thumbnailPath}
-                  alt=""
-                />
+                <div>
+                  <img
+                    style={{
+                      height: "10em",
+                      width: "auto",
+                      objectFit: "contain",
+                      marginTop: "2em",
+                    }}
+                    src={element.thumbnailPath}
+                    alt=""
+                  />
+                </div>
               </div>
             );
           })}

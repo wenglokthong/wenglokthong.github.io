@@ -3,3 +3,9 @@
   display:flex;
   flex-direction: column;
 }
+
+.playground-widgets-title
+{
+text-decoration: underline;
+font-weight: bold;
+}
