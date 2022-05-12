@@ -13,7 +13,10 @@ const MyRoutes = (
     <div>
       {/*elements here will render in all pages*/}
       <Routes>
-        <Route path="/*" element={<NavBar />} />
+        {" "}
+        {/* temp way to render navbar on all other pages EXCEPT home (/). V6 does not support regex*/}
+        <Route path="/" element={null} />
+        <Route path="*" element={<NavBar />} />
       </Routes>
     </div>
     <div style={{ margin: "2em" }}>
