@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import styled, { keyframes } from "styled-components";
-import { useState, useRef } from "react";
+import styled from "styled-components";
+// import { useState, useRef } from "react";
 
 import { MyButton } from "../buttons/button";
 
@@ -9,35 +9,35 @@ const StyledLink = styled(Link)`
   margin: 1em;
 `;
 
-const HoverContentAnimationStart = keyframes`
-0%{opacity:0}
-100%{opacity:1}
-`;
+// const HoverContentAnimationStart = keyframes`
+// 0%{opacity:0}
+// 100%{opacity:1}
+// `;
 
-const HoverContentAnimationEnd = keyframes`
-0%{opacity:1}
-100%{opacity:0}
-`;
+// const HoverContentAnimationEnd = keyframes`
+// 0%{opacity:1}
+// 100%{opacity:0}
+// `;
 
-const HoverContentStyled = styled.div`
-  display: flex;
-  height: max-content;
-  max-width: 50%;
-  overflow-wrap: anywhere;
-  text-align: left;
-  position: absolute;
-  background-color: black;
-  z-index: 1000;
-  left: ${(props) => props.x}px;
-  top: ${(props) => props.y}px;
-  transform: translate(350px, -50px);
-  border-style: solid;
-  animation-name: ${(props) =>
-    props.isHover ? HoverContentAnimationStart : HoverContentAnimationEnd};
-  animation-duration: 0.3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
-`;
+// const HoverContentStyled = styled.div`
+//   display: flex;
+//   height: max-content;
+//   max-width: 50%;
+//   overflow-wrap: anywhere;
+//   text-align: left;
+//   position: absolute;
+//   background-color: black;
+//   z-index: 1000;
+//   left: ${(props) => props.x}px;
+//   top: ${(props) => props.y}px;
+//   transform: translate(350px, -50px);
+//   border-style: solid;
+//   animation-name: ${(props) =>
+//     props.isHover ? HoverContentAnimationStart : HoverContentAnimationEnd};
+//   animation-duration: 0.3s;
+//   animation-iteration-count: 1;
+//   animation-fill-mode: both;
+// `;
 
 const HomepageLinksStyled = styled.div`
   text-align: center;
@@ -68,27 +68,27 @@ const HomePageLinksArray = [
 ];
 
 const HomepageLink = (props) => {
-  const [isHover, setIsHover] = useState(false);
-  const [isShowHoverContent, setIsShowHoverContent] = useState(false);
-  const [xy, setXY] = useState({ x: 0, y: 0 });
-  const myRef = useRef();
+  // const [isHover, setIsHover] = useState(false);
+  // const [isShowHoverContent, setIsShowHoverContent] = useState(false);
+  // const [xy, setXY] = useState({ x: 0, y: 0 });
+  // const myRef = useRef();
 
-  const getPos = () => {
-    setXY({ x: myRef.current.offsetLeft, y: myRef.current.offsetTop });
-  };
+  // const getPos = () => {
+  //   setXY({ x: myRef.current.offsetLeft, y: myRef.current.offsetTop });
+  // };
 
   return (
     <>
       <StyledLink
-        ref={myRef}
+        //ref={myRef}
         to={props.path}
         onMouseEnter={() => {
-          setIsHover(true);
-          if (!isShowHoverContent) setIsShowHoverContent(true);
-          getPos();
+          // setIsHover(true);
+          // if (!isShowHoverContent) setIsShowHoverContent(true);
+          // getPos();
         }}
         onMouseLeave={() => {
-          setIsHover(false);
+          //setIsHover(false);
         }}
       >
         {MyButton(props.buttonName)}

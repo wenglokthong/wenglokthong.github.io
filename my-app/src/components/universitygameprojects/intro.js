@@ -30,9 +30,9 @@ const GameSectionsLinkArray = [
   {
     routePath: parentRoutePath + "rapidridefight",
     brief:
-      "A cinematic puzzle platformer about a restless firefly who journeys underground to rescue a baby firefly and find out what he’s living for.",
+      "Pilot a high-speed jet boat and brawl in a destructive battle revolving around teamplay and navigational abilities set in a dystopian future Singapore.",
     linkName: "GAM300/350: Rapid Ride Fight",
-    thumbnailPath: require("../../assets/images/digipengampictures/ragnarok2.png"),
+    thumbnailPath: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame07-min.png"),
   },
 ];
 

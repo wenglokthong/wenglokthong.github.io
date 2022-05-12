@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.bc48901a.css",
-    "main.js": "/static/js/main.99c9631c.js",
+    "main.js": "/static/js/main.eb39bc82.js",
     "static/media/ragnarok2.png": "/static/media/ragnarok2.4d811b1d0d6f8c76bfa3.png",
     "static/media/ragnarok3.png": "/static/media/ragnarok3.30e4a81650d24e8e39e3.png",
     "static/media/ragnarok1.png": "/static/media/ragnarok1.3fa403a2f979dadd190c.png",
     "static/media/tripledots.png": "/static/media/tripledots.8cb758b9bfc1851a863e.png",
     "index.html": "/index.html",
     "main.bc48901a.css.map": "/static/css/main.bc48901a.css.map",
-    "main.99c9631c.js.map": "/static/js/main.99c9631c.js.map"
+    "main.eb39bc82.js.map": "/static/js/main.eb39bc82.js.map"
   },
   "entrypoints": [
     "static/css/main.bc48901a.css",
-    "static/js/main.99c9631c.js"
+    "static/js/main.eb39bc82.js"
   ]
 }

@@ -1,8 +1,13 @@
 import React from "react";
 import { MyHomeButton } from "../buttons/button";
+import { PDFShower } from "./helpers";
+
 import "./aboutme.css";
 import "../../index.css";
 import linkedinlogo from "../../assets/images/linkedin-logo.png";
+import resumepdf from "../../assets/pdf/Internship_Resume.pdf";
+
+export const AboutMeSection = (props) => {};
 
 export class AboutMe extends React.Component {
   render() {
@@ -24,6 +29,7 @@ export class AboutMe extends React.Component {
             width="40em"
           />
         </button>
+        <PDFShower pdfobject={resumepdf} pagesArray={[1, 2]} />
         <div>{MyHomeButton()}</div>
       </div>
     );
