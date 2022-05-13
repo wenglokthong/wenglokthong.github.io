@@ -29,7 +29,11 @@ export class AboutMe extends React.Component {
             width="40em"
           />
         </button>
-        <PDFShower pdfobject={resumepdf} pagesArray={[1, 2]} />
+        <PDFShower
+          pdfobject={resumepdf}
+          pagesArray={[1, 2]}
+          pdfName={"Resume"}
+        />
         <div>{MyHomeButton()}</div>
       </div>
     );

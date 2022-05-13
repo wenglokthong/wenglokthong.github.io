@@ -47,18 +47,17 @@ const HomePageLinksArray = [
   {
     path: "/components/aboutme",
     buttonName: "About Me",
-    hoverContent:
-      "about meeeeesdcsdcsdcdscsdcssd  sdsdfsdfsdfsdfsdfsd ds dsfdsfsdfsdfsdsdfsfsdfsssdfsdfsdfsdfsdfsdfsdfsdfsdfdsd sd e",
+    hoverContent: "",
   },
   {
     path: "/components/universitygameprojects/intro",
     buttonName: "University Game Projects",
-    hoverContent: "sxcvvvvvvvvvvvv hu h uh dddddddddddddduh u hu",
+    hoverContent: "",
   },
   {
     path: "/components/tictactoe",
     buttonName: "Tic Tac Toe",
-    hoverContent: "asdasdsadsa as sa sa as sa as as as",
+    hoverContent: "",
   },
   {
     path: "/components/playground",
@@ -91,7 +90,7 @@ const HomepageLink = (props) => {
           //setIsHover(false);
         }}
       >
-        {MyButton(props.buttonName)}
+        <MyButton name={props.buttonName} />
       </StyledLink>
 
       {/* {isShowHoverContent && (

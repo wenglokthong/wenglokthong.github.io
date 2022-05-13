@@ -17,11 +17,11 @@ const MyButtonTheme = createTheme({
   },
 });
 
-export const MyButton = (_name) => {
+export const MyButton = (props) => {
   return (
     <ThemeProvider theme={MyButtonTheme}>
-      <Button color="primary" variant="contained">
-        {_name}
+      <Button color="primary" variant="contained" onClick={props.onClick}>
+        {props.name}
       </Button>
     </ThemeProvider>
   );
