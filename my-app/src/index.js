@@ -7,8 +7,9 @@ import MyRoutes from "./routes.js";
 import "./index.css";
 
 //material ui
-import { CssBaseline, ThemeProvider, createTheme } from "@material-ui/core";
-import { indigo, lightBlue } from "@material-ui/core/colors";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { CssBaseline } from "@mui/material";
+import { indigo, lightBlue } from "@mui/material/colors";
 
 const GlobalTheme = createTheme({
   palette: {

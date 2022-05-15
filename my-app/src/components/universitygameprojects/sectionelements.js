@@ -1,7 +1,7 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 
-import { MyBackButton } from "../buttons/button";
+import { MyBackButton } from "../@helpers/buttons/button";
 import {
   RagnarokImages,
   RagnarokText,

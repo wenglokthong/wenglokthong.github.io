@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 // import { useState, useRef } from "react";
 
-import { MyButton } from "../buttons/button";
+import { MyButton } from "../@helpers/buttons/button";
 
 const StyledLink = styled(Link)`
   display: block;

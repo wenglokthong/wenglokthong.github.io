@@ -3,7 +3,7 @@ import React from "react";
 import "./playground.css";
 import { FontSlider } from "./fontSlider";
 import { ScreenModeChanger } from "./screenModeChanger";
-import { MyHomeButton } from "../buttons/button";
+import { MyHomeButton } from "../@helpers/buttons/button";
 
 export class Playground extends React.Component {
   constructor(props) {

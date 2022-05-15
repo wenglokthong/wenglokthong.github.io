@@ -3,8 +3,9 @@ import { Link, useNavigate } from "react-router-dom";
 import "./button.css";
 
 //material ui
-import { Button, ThemeProvider, createTheme } from "@material-ui/core";
-import { indigo, lightBlue } from "@material-ui/core/colors";
+import { Button } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { indigo, lightBlue } from "@mui/material/colors";
 
 const MyButtonTheme = createTheme({
   palette: {
@@ -14,15 +15,30 @@ const MyButtonTheme = createTheme({
     secondary: {
       main: lightBlue[500],
     },
+    colorThree: {
+      main: "#FFFFFF",
+    },
   },
 });
 
 export const MyButton = (props) => {
   return (
     <ThemeProvider theme={MyButtonTheme}>
-      <Button color="primary" variant="contained" onClick={props.onClick}>
+      <Button color="colorThree" variant="text" onClick={props.onClick}>
         {props.name}
       </Button>
+    </ThemeProvider>
+  );
+};
+
+export const MyLinkButton = (props) => {
+  return (
+    <ThemeProvider theme={MyButtonTheme}>
+      <Link to={props.path}>
+        <Button color="primary" variant="contained" onClick={props.onClick}>
+          {props.name}
+        </Button>
+      </Link>
     </ThemeProvider>
   );
 };

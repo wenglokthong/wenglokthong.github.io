@@ -1,5 +1,5 @@
 import "./navbar.css";
-import { MyHomeButton, MyBackButton } from "../buttons/button";
+import { MyHomeButton, MyBackButton } from "../@helpers/buttons/button";
 import { useState } from "react";
 
 //inline 'hover' does not work HMMM

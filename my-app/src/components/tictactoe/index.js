@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.css";
-import { MyHomeButton } from "../buttons/button";
+import { MyHomeButton } from "../@helpers/buttons/button";
 
 function Square(props) {
   return (

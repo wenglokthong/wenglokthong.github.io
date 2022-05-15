@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { MyButton } from "../buttons/button.js";
-import "./aboutme.css";
 import styled, { keyframes } from "styled-components";
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 
@@ -22,12 +21,24 @@ export const PDFShower = (props) => {
 
   return (
     <div>
-      <MyButton
-        name={"Show " + props.pdfName}
-        onClick={() => setIsShowPDF(!isShowPDF)}
-      />
+      {props.isNeedButton && (
+        <MyButton
+          name={"Show " + props.pdfName}
+          onClick={() => setIsShowPDF(!isShowPDF)}
+        />
+      )}
 
-      {isShowPDF && (
+      {props.isNeedButton ? (
+        isShowPDF && (
+          <StyledPDF>
+            <Document file={props.pdfobject}>
+              {props.pagesArray.map((element, index) => (
+                <Page key={index} pageNumber={element} />
+              ))}
+            </Document>
+          </StyledPDF>
+        )
+      ) : (
         <StyledPDF>
           <Document file={props.pdfobject}>
             {props.pagesArray.map((element, index) => (

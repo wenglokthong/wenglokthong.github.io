@@ -1,13 +1,32 @@
 import React from "react";
-import { MyHomeButton } from "../buttons/button";
-import { PDFShower } from "./helpers";
+import { MyHomeButton } from "../@helpers/buttons/button";
+import { PDFShower } from "../@helpers/pdf/pdfshower.js";
+import { ButtonGroupContent } from "../@helpers/content/buttongroupcontent";
 
 import "./aboutme.css";
 import "../../index.css";
 import linkedinlogo from "../../assets/images/linkedin-logo.png";
 import resumepdf from "../../assets/pdf/Internship_Resume.pdf";
 
-export const AboutMeSection = (props) => {};
+const buttonArray = [
+  { name: "One", content: "Meow" },
+  { name: "three", content: "woof" },
+  { name: "One", content: "Meow" },
+  { name: "three", content: "woof" },
+  { name: "One", content: "Meow" },
+  { name: "three", content: "woof" },
+  {
+    name: "two",
+    content: (
+      <PDFShower
+        isNeedButton={false}
+        pdfobject={resumepdf}
+        pagesArray={[1, 2]}
+        pdfName={"Resume"}
+      />
+    ),
+  },
+];
 
 export class AboutMe extends React.Component {
   render() {
@@ -29,10 +48,13 @@ export class AboutMe extends React.Component {
             width="40em"
           />
         </button>
-        <PDFShower
-          pdfobject={resumepdf}
-          pagesArray={[1, 2]}
-          pdfName={"Resume"}
+        <ButtonGroupContent
+          buttonArray={buttonArray}
+          style={{ textAlign: "center" }}
+          settings={{
+            variant: "text",
+            orientation: "horizontal",
+          }}
         />
         <div>{MyHomeButton()}</div>
       </div>

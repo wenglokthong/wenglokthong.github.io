@@ -1,6 +1,6 @@
 import "./universitygameprojects.css";
 import React from "react";
-import { MyHomeButton } from "../buttons/button.js";
+import { MyHomeButton } from "../@helpers/buttons/button.js";
 import { Link } from "react-router-dom";
 
 const parentRoutePath = "/components/universitygameprojects/";
