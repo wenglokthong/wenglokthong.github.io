@@ -9,23 +9,31 @@ import "./index.css";
 //material ui
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
-import { indigo, lightBlue } from "@mui/material/colors";
 
-const GlobalTheme = createTheme({
+export const GlobalTheme = createTheme({
   palette: {
     background: {
-      default: "#10064f",
+      default: "#2C2F33",
     },
 
     primary: {
-      main: indigo[500],
+      main: "#5865F2",
     },
     secondary: {
-      main: lightBlue[500],
+      main: "#97A9B4",
     },
     text: {
       primary: "#FFFFFF",
     },
+    secondary2: {
+      main: "#2C2F33",
+    },
+    secondary3: {
+      main: "#23272A",
+    },
+  },
+  typography: {
+    fontFamily: ["Roboto", "sans-serif"].join(","),
   },
 });
 

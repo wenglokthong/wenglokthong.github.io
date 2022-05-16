@@ -1,11 +1,11 @@
 .homepage-root
 {
-
+text-align: center;
 }
 
 .homepage-name
 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
     font-style: italic;
     font-weight:bold ;
     font-size: 2em;

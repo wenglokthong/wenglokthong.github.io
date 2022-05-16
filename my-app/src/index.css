@@ -6,6 +6,14 @@
     color:white;
 } */
 
+/*google fonts*/
+
+
 a{
     color:lightblue;
+}
+
+.body{
+    max-width: 1366px;
+    margin:auto
 }

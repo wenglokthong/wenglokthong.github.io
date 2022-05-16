@@ -1,22 +1,20 @@
 import React from "react";
 import { MyHomeButton } from "../@helpers/buttons/button";
 import { PDFShower } from "../@helpers/pdf/pdfshower.js";
-import { ButtonGroupContent } from "../@helpers/content/buttongroupcontent";
+import { TabPanelContent } from "../@helpers/tabs/tabpanelcontent";
 
+import { IntroContent, NerdContent } from "./content";
 import "./aboutme.css";
 import "../../index.css";
 import linkedinlogo from "../../assets/images/linkedin-logo.png";
 import resumepdf from "../../assets/pdf/Internship_Resume.pdf";
 
-const buttonArray = [
-  { name: "One", content: "Meow" },
-  { name: "three", content: "woof" },
-  { name: "One", content: "Meow" },
-  { name: "three", content: "woof" },
-  { name: "One", content: "Meow" },
-  { name: "three", content: "woof" },
+const tabsArray = [
+  { name: "Intro", content: IntroContent },
+
+  { name: "Nerd section", content: NerdContent },
   {
-    name: "two",
+    name: "Resume",
     content: (
       <PDFShower
         isNeedButton={false}
@@ -48,14 +46,7 @@ export class AboutMe extends React.Component {
             width="40em"
           />
         </button>
-        <ButtonGroupContent
-          buttonArray={buttonArray}
-          style={{ textAlign: "center" }}
-          settings={{
-            variant: "text",
-            orientation: "horizontal",
-          }}
-        />
+        <TabPanelContent tabsArray={tabsArray} />
         <div>{MyHomeButton()}</div>
       </div>
     );

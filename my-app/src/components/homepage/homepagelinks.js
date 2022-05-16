@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 // import { useState, useRef } from "react";
 
+import { ButtonGroupLinks } from "../@helpers/buttons/buttongrouplinks";
 import { MyButton } from "../@helpers/buttons/button";
 
 const StyledLink = styled(Link)`
@@ -46,22 +47,22 @@ const HomepageLinksStyled = styled.div`
 const HomePageLinksArray = [
   {
     path: "/components/aboutme",
-    buttonName: "About Me",
+    name: "About Me",
     hoverContent: "",
   },
   {
     path: "/components/universitygameprojects/intro",
-    buttonName: "University Game Projects",
+    name: "University Game Projects",
     hoverContent: "",
   },
   {
     path: "/components/tictactoe",
-    buttonName: "Tic Tac Toe",
+    name: "Tic Tac Toe",
     hoverContent: "",
   },
   {
     path: "/components/playground",
-    buttonName: "Playground",
+    name: "Playground",
     hoverContent: "",
   },
 ];
@@ -112,12 +113,19 @@ const HomepageLink = (props) => {
 export const HomepageLinks = () => {
   return (
     <>
-      <HomepageLinksStyled>
+      {/* <HomepageLinksStyled>
         Click on one of the buttons to check it out!
         {HomePageLinksArray.map((element) => {
           return <div key={element.path}>{HomepageLink(element)}</div>;
         })}
-      </HomepageLinksStyled>
+      </HomepageLinksStyled> */}
+
+      <ButtonGroupLinks
+        buttonArray={HomePageLinksArray}
+        settings={{ orientation: "vertical" }}
+        style={{ textAlign: "center" }}
+        buttonMargin="1em"
+      />
     </>
   );
 };
