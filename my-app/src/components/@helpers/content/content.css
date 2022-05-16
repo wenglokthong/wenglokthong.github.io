@@ -1,0 +1,31 @@
+@keyframes collapsibleAnim
+{
+  from {
+    transform-origin: top;
+    transform:scaleY(0);
+    opacity:0;
+  }
+
+  to {
+    transform-origin: top;
+    transform:scaleY(1);
+    opacity:1;
+  }
+}
+
+.collapsible{
+
+  animation: collapsibleAnim 0.1s;
+}
+
+.collapsible-title{
+  padding:0.2em;
+transition: background-color 0.2s;
+}
+
+.collapsible-title:hover{
+border-radius: 10%;
+background-color: rgba(128, 128, 128, 0.278);
+ cursor: pointer ;
+}
+

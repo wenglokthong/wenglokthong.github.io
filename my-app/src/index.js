@@ -1,4 +1,5 @@
 ///entry point///
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { HashRouter } from "react-router-dom";
@@ -39,13 +40,13 @@ export const GlobalTheme = createTheme({
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-const App = () => {
-  return (
-    <ThemeProvider theme={GlobalTheme}>
-      <HashRouter>{MyRoutes}</HashRouter>
-      <CssBaseline />
-    </ThemeProvider>
-  );
-};
+if (module.hot) {
+  module.hot.accept();
+}
 
-root.render(<App />);
+root.render(
+  <ThemeProvider theme={GlobalTheme}>
+    <HashRouter>{MyRoutes}</HashRouter>
+    <CssBaseline />
+  </ThemeProvider>
+);

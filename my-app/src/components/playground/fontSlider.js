@@ -1,31 +1,25 @@
-import React from "react";
-import "./playground.css";
-export class FontSlider extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      value: 16,
-    };
-  }
+import React, { useState } from "react";
 
-  handleChange = (event) => {
-    this.setState({ value: event.target.value });
-    this.props.setFontSize(event.target.value);
+import "./playground.css";
+export const FontSlider = (props) => {
+  const [value, setValue] = useState(16);
+
+  const handleChange = (event) => {
+    setValue(event.target.value);
+    props.setFontSize(event.target.value);
   };
 
-  render() {
-    return (
-      <div>
-        <div className="playground-widgets-title">Font size changer</div>
-        <input
-          type="range"
-          onChange={this.handleChange}
-          min="10"
-          max="72"
-          value={this.state.value}
-        ></input>
-        {this.state.value}
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      <div className="playground-widgets-title">Font size changer</div>
+      <input
+        type="range"
+        onChange={handleChange}
+        min="10"
+        max="72"
+        value={value}
+      ></input>
+      {value}
+    </div>
+  );
+};
