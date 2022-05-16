@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a616491c.css",
-    "main.js": "/static/js/main.52ea3485.js",
+    "main.css": "/static/css/main.b0faf517.css",
+    "main.js": "/static/js/main.529b537c.js",
     "static/media/RapidRideFight_InGame02-min.png": "/static/media/RapidRideFight_InGame02-min.3f9dbe9b1c16b3b34180.png",
     "static/media/RapidRideFight_InGame06-min.png": "/static/media/RapidRideFight_InGame06-min.4766f9affd0d92f3de1b.png",
     "static/media/RapidRideFight_InGame03-min.png": "/static/media/RapidRideFight_InGame03-min.810d59a3e7501d72b1c7.png",
@@ -30,11 +30,11 @@
     "static/media/ragnarok1.png": "/static/media/ragnarok1.3fa403a2f979dadd190c.png",
     "static/media/tripledots.png": "/static/media/tripledots.8cb758b9bfc1851a863e.png",
     "index.html": "/index.html",
-    "main.a616491c.css.map": "/static/css/main.a616491c.css.map",
-    "main.52ea3485.js.map": "/static/js/main.52ea3485.js.map"
+    "main.b0faf517.css.map": "/static/css/main.b0faf517.css.map",
+    "main.529b537c.js.map": "/static/js/main.529b537c.js.map"
   },
   "entrypoints": [
-    "static/css/main.a616491c.css",
-    "static/js/main.52ea3485.js"
+    "static/css/main.b0faf517.css",
+    "static/js/main.529b537c.js"
   ]
 }
