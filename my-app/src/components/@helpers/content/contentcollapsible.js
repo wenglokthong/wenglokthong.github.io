@@ -5,10 +5,11 @@ import "./content.css";
 
 export const ContentCollapsible = (props) => {
   const [isShowContent, setShowContent] = useState(false);
-
+  const [isOn, setIsOn] = useState(false);
+  const Type = props.type ? props.type : "h1";
   return (
     <>
-      <div
+      <Type
         className="collapsible-title"
         style={{
           maxWidth: "max-content",
@@ -18,13 +19,24 @@ export const ContentCollapsible = (props) => {
           alignItems: "center",
         }}
         onClick={() => {
-          setShowContent(!isShowContent);
+          setIsOn(!isOn);
+
+          if (!isShowContent) setShowContent(true);
         }}
       >
         {props.title} <ArrowDropDown fontSize="large" />
-      </div>
+      </Type>
 
-      {isShowContent && <div className="collapsible">{props.children}</div>}
+      {isShowContent && (
+        <div
+          className={isOn ? "collapsibleOn" : "collapsibleOff"}
+          onAnimationEnd={() => {
+            if (!isOn) setShowContent(false);
+          }}
+        >
+          {props.children}
+        </div>
+      )}
     </>
   );
 };

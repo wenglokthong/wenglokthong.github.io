@@ -1,7 +1,42 @@
 import "./content.css";
 import { ContentCollapsible } from "../@helpers/content/contentcollapsible";
 
+import "./aboutme.css";
+import linkedinlogo from "../../assets/images/linkedin-logo.png";
 export const IntroContent = (
+  <div>
+    <h1>Hi, I'm Max</h1>
+    <h2>
+      Currently an undergraduate studying Computer Science and Game Design.
+      Previously studied Diploma in Mechanical Engineering. I have worked on
+      several 2D and 3D game projects, using both commercial and custom game
+      engines.
+      <br />
+      <br />I have an interest of how things work under the hood, which was my
+      reason of pursuing engineering in the first place. Hence, as an avid
+      gamer, I wanted to know how games are built, which led to my pursue in
+      Computer Science and Game Design.
+      <br />
+      <br />
+      Having almost completed my degree, my next step is to expand my technical
+      skillsets and explore other areas of the technical industry. My goal is to
+      learn and improve towards being a full stack developer.
+    </h2>
+    Click to go to my LinkedIn profile! (opens up a new window)
+    <br />
+    <button
+      className="linkedin-button"
+      onClick={() => {
+        window.open("https://www.linkedin.com/in/maxthong/", "_blank");
+      }}
+    >
+      LinkedIn
+      <img src={linkedinlogo} alt="linkedin logo" height="40em" width="40em" />
+    </button>
+  </div>
+);
+
+export const SkillContent = (
   <div>
     <h1>Hi, I'm Max</h1>
     <h2></h2>
@@ -10,62 +45,103 @@ export const IntroContent = (
 
 export const NerdContent = (
   <div>
-    <div>
-      <h2>Games</h2>
+    <ContentCollapsible type="h2" title="Games">
       <h4>
-        Although my days of hardcore gaming are over, I am still a casual gamer.
-        Mostly exploring and trying out games just for relaxation.
-        <br /> Here are some of my favourite and notable games that I have
-        played.
-      </h4>
-      <h3>MMORPGs</h3>
-      <h4>
-        <ul>
-          <li>
-            Granado Espada (Hit me up if you actually know or played this)
-          </li>
-          <li>TERA </li>
-          <li>Neverwinter</li>
-          <li>PSO2</li>
-        </ul>
-        <i>Yes, I have never played MapleStory</i>
+        I love playing games, and I have tried and explored many digital games
+        out there. My favourite genre would be action rpg, hack and slash,
+        looter shooters games. I tend to avoid the puzzle, narrative or racing
+        genre.
+        <br /> Here are some of my favourite games (I might not have necessarily
+        played or completed them, but I have interest in them)
       </h4>
 
-      <h3>Multiplayer</h3>
-      <h4>
-        <ul>
-          <li>Paladins (Paladins {">"} Overwatch, fight me)</li>
-          <li>Remnant: From the Ashes</li>
-          <li>Minecraft</li>
-          <li>Garry's Mod</li>
-          <li>Left 4 Dead 2</li>
-        </ul>
-      </h4>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+        }}
+      >
+        <div style={{ flex: "1" }}>
+          <h3>MMORPGs</h3>
+          <h4>
+            <ul>
+              <li>
+                Granado Espada (Hit me up if you actually know or played this)
+              </li>
+              <li>TERA </li>
+              <li>PSO2</li>
+            </ul>
+          </h4>
+        </div>
 
-      <ContentCollapsible title="MEOW">
-        <h4>
-          <ul>
-            <li>Paladins (Paladins {">"} Overwatch, fight me)</li>
-            <li>Remnant: From the Ashes</li>
-            <li>Minecraft</li>
-            <li>Garry's Mod</li>
-            <li>Left 4 Dead 2</li>
-          </ul>
-        </h4>
-      </ContentCollapsible>
-      <h3>Singleplayer</h3>
-      <h4>
-        <ul>
-          <li>
-            Halo:CE {"&"} Halo 2 (Played them when they launched in the original
-            XBox. My childhood is right here)
-          </li>
-          <li>Halo MCC</li>
-          <li>God of War: Chains of Olympus {"&"} Ghost of Sparta</li>
-          <li>Garry's Mod</li>
-          <li>Left 4 Dead 2</li>
-        </ul>
-      </h4>
-    </div>
+        <div style={{ flex: "1" }}>
+          <h3>Multiplayer</h3>
+
+          <h4>
+            <ul>
+              <li>Paladins (Paladins {">"} Overwatch, fight me)</li>
+              <li>The Division 1 {"&"} 2</li>
+              <li>Tom Clancy's Ghost Recon Wildlands and Breakpoint</li>
+            </ul>
+          </h4>
+        </div>
+        <div style={{ flex: "1" }}>
+          <h3>Singleplayer</h3>
+          <h4>
+            <ul>
+              <li>Halo Series (Those under Bungie anyway)</li>
+              <li>God of War Series</li>
+              <li> Far Cry Series</li>
+            </ul>
+          </h4>
+        </div>
+        <div style={{ flex: "1" }}>
+          <h3>Mobile</h3>
+          <h4>
+            <ul>
+              <li>Brawl Stars (I'm probably still playing this)</li>
+            </ul>
+          </h4>
+        </div>
+      </div>
+    </ContentCollapsible>
+
+    <ContentCollapsible type="h2" title="Shows">
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+        }}
+      >
+        <div style={{ flex: "1" }}>
+          <h3>Anime</h3>
+          <h4>
+            <ul>
+              <li>Attack on Titan (My first anime, so I'm biased)</li>
+              <li>
+                Seven Deadly Sins S1 {"&"} S2 (I refuse to accept anything
+                after){" "}
+              </li>
+              <li>Toriko</li>
+            </ul>
+          </h4>
+        </div>
+
+        <div style={{ flex: "1" }}>
+          <h3>Cartoon</h3>
+
+          <h4>
+            <ul>
+              <li>Avatar: The Last Airbender {"&"} The Legend of Korra</li>
+              <li>Invincible</li>
+              <li>
+                Phineas and Ferb (This show seems funnier when you watch it as
+                an adult)
+              </li>
+            </ul>
+          </h4>
+        </div>
+      </div>
+    </ContentCollapsible>
   </div>
 );
