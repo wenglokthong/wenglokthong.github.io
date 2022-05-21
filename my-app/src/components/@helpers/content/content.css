@@ -1,49 +1,11 @@
-@keyframes collapsibleAnim
-{
-  from {
-    transform-origin: top;
-    transform:scaleY(0);
-    opacity:0;
-  }
-
-  to {
-    transform-origin: top;
-    transform:scaleY(1);
-    opacity:1;
-  }
-}
-
-@keyframes collapsibleAnimR
-{
-  from {
-    transform-origin: top;
-    transform:scaleY(0);
-    opacity:1;
-  }
-
-  to {
-    transform-origin: top;
-    transform:scaleY(1);
-    opacity:0;
-  }
-}
-
-
-.collapsibleOn{
+.collapsible-content{
 
   animation: collapsibleAnim 0.1s;
   animation-fill-mode: both;
+  overflow: hidden;
+transition:height 0.2s;
 
 }
-
-.collapsibleOff{
-
-  animation: collapsibleAnimR 0.1s;
-  animation-fill-mode: both;
-  
-
-}
-
 .collapsible-title{
   padding:0.2em;
 transition: background-color 0.2s;
@@ -53,5 +15,6 @@ transition: background-color 0.2s;
 border-radius: 10%;
 background-color: rgba(128, 128, 128, 0.278);
  cursor: pointer ;
+ 
 }
 

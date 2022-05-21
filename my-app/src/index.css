@@ -13,7 +13,12 @@ a{
     color:lightblue;
 }
 
-.body{
+body{
+
+}
+
+.root
+{
     max-width: 1366px;
-    margin:auto
+    margin:auto;
 }

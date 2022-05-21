@@ -45,8 +45,10 @@ if (module.hot) {
 }
 
 root.render(
-  <ThemeProvider theme={GlobalTheme}>
-    <HashRouter>{MyRoutes}</HashRouter>
-    <CssBaseline />
-  </ThemeProvider>
+  <div className="root">
+    <ThemeProvider theme={GlobalTheme}>
+      <HashRouter>{MyRoutes}</HashRouter>
+      <CssBaseline />
+    </ThemeProvider>
+  </div>
 );

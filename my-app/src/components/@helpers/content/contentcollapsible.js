@@ -1,14 +1,16 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import ArrowDropDown from "@mui/icons-material/ArrowDropDown";
 
 import "./content.css";
 
 export const ContentCollapsible = (props) => {
-  const [isShowContent, setShowContent] = useState(false);
+  const [height, setHeight] = useState("0px");
   const [isOn, setIsOn] = useState(false);
   const Type = props.type ? props.type : "h1";
+
+  const content = useRef(null);
   return (
-    <>
+    <div style={props.style}>
       <Type
         className="collapsible-title"
         style={{
@@ -21,22 +23,19 @@ export const ContentCollapsible = (props) => {
         onClick={() => {
           setIsOn(!isOn);
 
-          if (!isShowContent) setShowContent(true);
+          setHeight(!isOn ? `${content.current.scrollHeight}px` : "0px");
         }}
       >
         {props.title} <ArrowDropDown fontSize="large" />
       </Type>
 
-      {isShowContent && (
-        <div
-          className={isOn ? "collapsibleOn" : "collapsibleOff"}
-          onAnimationEnd={() => {
-            if (!isOn) setShowContent(false);
-          }}
-        >
-          {props.children}
-        </div>
-      )}
-    </>
+      <div
+        ref={content}
+        className="collapsible-content"
+        style={{ ...props.contentStyle, height: height }}
+      >
+        {props.children}
+      </div>
+    </div>
   );
 };

@@ -29,8 +29,6 @@ export class Playground extends React.Component {
     document.body.style.color = value ? null : "white"; //font color
   };
 
-  setStyle = () => {};
-
   render() {
     return (
       <>

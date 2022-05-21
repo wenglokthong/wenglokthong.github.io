@@ -37,9 +37,81 @@ export const IntroContent = (
 );
 
 export const SkillContent = (
-  <div>
-    <h1>Hi, I'm Max</h1>
-    <h2></h2>
+  <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <div style={{ margin: "1em" }}>
+      <h2>Programming</h2>
+      <h3>
+        <ul>
+          <li>C/C++ </li>
+          <li>C# </li>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>HTLM/CSS/JavaScript</li>
+          <li>ReactJS</li>
+        </ul>
+      </h3>
+    </div>
+
+    <div style={{ margin: "1em" }}>
+      <h2>IDE</h2>
+      <h3>
+        <ul>
+          <li>Visual Studios </li>
+          <li>Visual Studio Code </li>
+          <li>Notepad++</li>
+        </ul>
+      </h3>
+    </div>
+    <div style={{ margin: "1em" }}>
+      <h2>Microsoft Office</h2>
+      <h3>
+        <ul>
+          <li>Word</li>
+          <li>Powerpoint </li>
+          <li>Excel</li>
+        </ul>
+      </h3>
+    </div>
+    <div style={{ margin: "1em" }}>
+      <h2>Game Engines</h2>
+      <h3>
+        <ul>
+          <li>Unreal Engine</li>
+          <li>Unity </li>
+        </ul>
+      </h3>
+    </div>
+    <div style={{ margin: "1em" }}>
+      <h2>Video/Image Manipulation</h2>
+      <h3>
+        <ul>
+          <li>DaVinci Resolve</li>
+          <li>VideoPad</li>
+          <li>Adobe Illustrator</li>
+        </ul>
+      </h3>
+    </div>
+    <div style={{ margin: "1em" }}>
+      <h2>3D</h2>
+      <h3>
+        <ul>
+          <li>Blender</li>
+          <li>AutoCad</li>
+          <li>RealityCapture</li>
+        </ul>
+      </h3>
+    </div>
+    <div style={{ margin: "1em" }}>
+      <h2>Art/Drawing</h2>
+      <h3>
+        <ul>
+          <li>Paint Tool SAI</li>
+          <li>Krita</li>
+          <li>Clip Studio Paint</li>
+          <li>Corel Painter</li>
+        </ul>
+      </h3>
+    </div>
   </div>
 );
 
