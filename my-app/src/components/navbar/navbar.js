@@ -2,43 +2,26 @@ import "./navbar.css";
 import { MyHomeButton, MyBackButton } from "../@helpers/buttons/button";
 import { useState } from "react";
 import { ContentCollapsible } from "../@helpers/content/contentcollapsible";
+import MenuIcon from "@mui/icons-material/Menu";
 
 export const NavBar = () => {
-  const [navState, setNavState] = useState(false);
-
   return (
-    <div
-      className="navbar"
-      onMouseEnter={() => setNavState(true)}
-      onMouseLeave={() => setNavState(false)}
+    <ContentCollapsible
+      title={<MenuIcon fontSize="large" />}
+      style={{
+        position: "absolute",
+        bottom: "0%",
+        left: "0%",
+        position: "fixed",
+        zIndex: "1000",
+      }}
+      contentStyle={{
+        position: "absolute",
+        bottom: "100%",
+      }}
     >
-      <ContentCollapsible
-        title={
-          <img
-            className="navbar-icon"
-            src={require("../../assets/images/navbar/tripledots.png")}
-            alt=""
-          />
-        }
-        style={{
-          position: "absolute",
-          bottom: "0%",
-        }}
-        contentStyle={{
-          position: "absolute",
-          bottom: "100%",
-        }}
-      >
-        <MyHomeButton />
-        <MyBackButton />
-      </ContentCollapsible>
-
-      {/* {navState && (
-        <div className="navbar-buttons">
-          <MyHomeButton />
-          <MyBackButton />
-        </div>
-      )} */}
-    </div>
+      <MyHomeButton />
+      <MyBackButton />
+    </ContentCollapsible>
   );
 };

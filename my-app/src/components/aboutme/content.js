@@ -1,11 +1,23 @@
 import "./content.css";
 import { ContentCollapsible } from "../@helpers/content/contentcollapsible";
-
+import ArrowDropDown from "@mui/icons-material/ArrowDropDown";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "./aboutme.css";
 import linkedinlogo from "../../assets/images/linkedin-logo.png";
 export const IntroContent = (
   <div>
-    <h1>Hi, I'm Max</h1>
+    <h1>
+      Hi, I'm{" "}
+      <span
+        style={{
+          fontFamily: "'Smooch',cursive",
+
+          fontSize: "2em",
+        }}
+      >
+        Max
+      </span>
+    </h1>
     <h2>
       Currently an undergraduate studying Computer Science and Game Design.
       Previously studied Diploma in Mechanical Engineering. I have worked on
@@ -20,19 +32,26 @@ export const IntroContent = (
       <br />
       Having almost completed my degree, my next step is to expand my technical
       skillsets and explore other areas of the technical industry. My goal is to
-      learn and improve towards being a full stack developer.
+      learn and improve towards being a full stack developer. <br /> <br />
+      Click to go to my LinkedIn profile! (opens up a new window)
+      <br />
     </h2>
-    Click to go to my LinkedIn profile! (opens up a new window)
-    <br />
-    <button
-      className="linkedin-button"
-      onClick={() => {
-        window.open("https://www.linkedin.com/in/maxthong/", "_blank");
-      }}
-    >
-      LinkedIn
-      <img src={linkedinlogo} alt="linkedin logo" height="40em" width="40em" />
-    </button>
+    <div style={{ display: "flex" }}>
+      <LinkedInIcon
+        className="linkedin-button"
+        onClick={() => {
+          window.open("https://www.linkedin.com/in/maxthong/", "_blank");
+        }}
+        style={{ fontSize: "4em", margin: "auto" }}
+      />
+    </div>
+    <h2>
+      {/*If i dont put the breaks here, the auto height resize of the swipeable will cut the last part off*/}
+      <br />
+      <br />
+      <br />
+      <br />
+    </h2>
   </div>
 );
 
@@ -117,103 +136,99 @@ export const SkillContent = (
 
 export const NerdContent = (
   <div>
-    <ContentCollapsible type="h2" title="Games">
-      <h4>
-        I love playing games, and I have tried and explored many digital games
-        out there. My favourite genre would be action rpg, hack and slash,
-        looter shooters games. I tend to avoid the puzzle, narrative or racing
-        genre.
-        <br /> Here are some of my favourite games (I might not have necessarily
-        played or completed them, but I have interest in them)
-      </h4>
+    <h2>Games</h2>
+    <h4>
+      I love playing games, and I have tried and explored many digital games out
+      there. My favourite genre would be action rpg, hack and slash, looter
+      shooters games. I tend to avoid the puzzle, narrative or racing genre.
+      <br /> Here are some of my favourite games (I might not have necessarily
+      played or completed them, but I have interest in them)
+    </h4>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-evenly",
-        }}
-      >
-        <div style={{ flex: "1" }}>
-          <h3>MMORPGs</h3>
-          <h4>
-            <ul>
-              <li>
-                Granado Espada (Hit me up if you actually know or played this)
-              </li>
-              <li>TERA </li>
-              <li>PSO2</li>
-            </ul>
-          </h4>
-        </div>
-
-        <div style={{ flex: "1" }}>
-          <h3>Multiplayer</h3>
-
-          <h4>
-            <ul>
-              <li>Paladins (Paladins {">"} Overwatch, fight me)</li>
-              <li>The Division 1 {"&"} 2</li>
-              <li>Tom Clancy's Ghost Recon Wildlands and Breakpoint</li>
-            </ul>
-          </h4>
-        </div>
-        <div style={{ flex: "1" }}>
-          <h3>Singleplayer</h3>
-          <h4>
-            <ul>
-              <li>Halo Series (Those under Bungie anyway)</li>
-              <li>God of War Series</li>
-              <li> Far Cry Series</li>
-            </ul>
-          </h4>
-        </div>
-        <div style={{ flex: "1" }}>
-          <h3>Mobile</h3>
-          <h4>
-            <ul>
-              <li>Brawl Stars (I'm probably still playing this)</li>
-            </ul>
-          </h4>
-        </div>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-evenly",
+      }}
+    >
+      <div style={{ flex: "1" }}>
+        <h3>MMORPGs</h3>
+        <h4>
+          <ul>
+            <li>
+              Granado Espada (Hit me up if you actually know or played this)
+            </li>
+            <li>TERA </li>
+            <li>PSO2</li>
+          </ul>
+        </h4>
       </div>
-    </ContentCollapsible>
 
-    <ContentCollapsible type="h2" title="Shows">
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-evenly",
-        }}
-      >
-        <div style={{ flex: "1" }}>
-          <h3>Anime</h3>
-          <h4>
-            <ul>
-              <li>Attack on Titan (My first anime, so I'm biased)</li>
-              <li>
-                Seven Deadly Sins S1 {"&"} S2 (I refuse to accept anything
-                after){" "}
-              </li>
-              <li>Toriko</li>
-            </ul>
-          </h4>
-        </div>
+      <div style={{ flex: "1" }}>
+        <h3>Multiplayer</h3>
 
-        <div style={{ flex: "1" }}>
-          <h3>Cartoon</h3>
-
-          <h4>
-            <ul>
-              <li>Avatar: The Last Airbender {"&"} The Legend of Korra</li>
-              <li>Invincible</li>
-              <li>
-                Phineas and Ferb (This show seems funnier when you watch it as
-                an adult)
-              </li>
-            </ul>
-          </h4>
-        </div>
+        <h4>
+          <ul>
+            <li>Paladins (Paladins {">"} Overwatch, fight me)</li>
+            <li>The Division 1 {"&"} 2</li>
+            <li>Tom Clancy's Ghost Recon Wildlands and Breakpoint</li>
+          </ul>
+        </h4>
       </div>
-    </ContentCollapsible>
+      <div style={{ flex: "1" }}>
+        <h3>Singleplayer</h3>
+        <h4>
+          <ul>
+            <li>Halo Series (Those under Bungie anyway)</li>
+            <li>God of War Series</li>
+            <li> Far Cry Series</li>
+          </ul>
+        </h4>
+      </div>
+      <div style={{ flex: "1" }}>
+        <h3>Mobile</h3>
+        <h4>
+          <ul>
+            <li>Brawl Stars (I'm probably still playing this)</li>
+          </ul>
+        </h4>
+      </div>
+    </div>
+
+    <h2>Shows</h2>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-evenly",
+      }}
+    >
+      <div style={{ flex: "1" }}>
+        <h3>Anime</h3>
+        <h4>
+          <ul>
+            <li>Attack on Titan (My first anime, so I'm biased)</li>
+            <li>
+              Seven Deadly Sins S1 {"&"} S2 (I refuse to accept anything after){" "}
+            </li>
+            <li>Toriko</li>
+          </ul>
+        </h4>
+      </div>
+
+      <div style={{ flex: "1" }}>
+        <h3>Cartoon</h3>
+
+        <h4>
+          <ul>
+            <li>Avatar: The Last Airbender {"&"} The Legend of Korra</li>
+            <li>Invincible</li>
+            <li>
+              Phineas and Ferb (This show seems funnier when you watch it as an
+              adult)
+            </li>
+          </ul>
+        </h4>
+      </div>
+    </div>
   </div>
 );

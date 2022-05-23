@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import ArrowDropDown from "@mui/icons-material/ArrowDropDown";
 
 import "./content.css";
 
@@ -7,7 +6,6 @@ export const ContentCollapsible = (props) => {
   const [height, setHeight] = useState("0px");
   const [isOn, setIsOn] = useState(false);
   const Type = props.type ? props.type : "h1";
-
   const content = useRef(null);
   return (
     <div style={props.style}>
@@ -26,7 +24,7 @@ export const ContentCollapsible = (props) => {
           setHeight(!isOn ? `${content.current.scrollHeight}px` : "0px");
         }}
       >
-        {props.title} <ArrowDropDown fontSize="large" />
+        {props.title}
       </Type>
 
       <div

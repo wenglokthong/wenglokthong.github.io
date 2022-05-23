@@ -14,20 +14,15 @@ transform: scale(1);
 
 .linkedin-button
 {
-    color: blue;
-    margin-top:2em; 
-    margin-left: auto;
-    margin-right: auto;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+
+
     
 }
 
 .linkedin-button:hover
 {
-
+cursor: pointer;
     animation: linkedin-button-kf 0.2s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
