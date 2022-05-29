@@ -77,15 +77,19 @@ export const RagnarokText = (
 
 export const ZeroDayImages = [
   {
-    imgSrc: require("../../assets/images/digipengampictures/ragnarok1.png"),
+    imgSrc: require("../../assets/images/digipengampictures/zeroday/zeroday1.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/ragnarok2.png"),
+    imgSrc: require("../../assets/images/digipengampictures/zeroday/zeroday2.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/ragnarok3.png"),
+    imgSrc: require("../../assets/images/digipengampictures/zeroday/zeroday3.png"),
+    imgInfo: "",
+  },
+  {
+    imgSrc: require("../../assets/images/digipengampictures/zeroday/zeroday4.png"),
     imgInfo: "",
   },
 ];

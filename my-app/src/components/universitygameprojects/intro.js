@@ -18,7 +18,7 @@ const GameSectionsLinkArray = [
     brief:
       "A 2D multi-directional fast paced shooter game where the player takes control of a digital virus and journey through progressively harder stages filled with enemies that require specific clear conditions.",
     linkName: "GAM150: ZER0-DAY",
-    thumbnailPath: require("../../assets/images/digipengampictures/ragnarok2.png"),
+    thumbnailPath: require("../../assets/images/digipengampictures/zeroday/zeroday2.png"),
   },
   {
     routePath: parentRoutePath + "glowingunder",
