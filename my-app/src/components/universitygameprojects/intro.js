@@ -25,7 +25,7 @@ const GameSectionsLinkArray = [
     brief:
       "A cinematic puzzle platformer about a restless firefly who journeys underground to rescue a baby firefly and find out what he’s living for.",
     linkName: "GAM200/250: Glowing Under",
-    thumbnailPath: require("../../assets/images/digipengampictures/ragnarok2.png"),
+    thumbnailPath: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder1.PNG"),
   },
   {
     routePath: parentRoutePath + "rapidridefight",

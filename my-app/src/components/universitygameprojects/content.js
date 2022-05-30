@@ -186,15 +186,39 @@ export const ZeroDayText = (
 
 export const GlowingUnderImages = [
   {
-    imgSrc: require("../../assets/images/digipengampictures/ragnarok1.png"),
+    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder1.PNG"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/ragnarok2.png"),
+    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder2.PNG"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/ragnarok3.png"),
+    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder3.PNG"),
+    imgInfo: "",
+  },
+  {
+    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder4.PNG"),
+    imgInfo: "",
+  },
+  {
+    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder5.PNG"),
+    imgInfo: "",
+  },
+  {
+    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder6.PNG"),
+    imgInfo: "",
+  },
+  {
+    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder7.PNG"),
+    imgInfo: "",
+  },
+  {
+    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder8.PNG"),
+    imgInfo: "",
+  },
+  {
+    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder9.PNG"),
     imgInfo: "",
   },
 ];
