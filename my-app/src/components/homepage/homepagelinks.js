@@ -61,7 +61,7 @@ const HomePageLinksArray = [
     hoverContent: "",
   },
   {
-    path: "/components/playground",
+    path: "/components/playground/homepage",
     name: "Playground",
     hoverContent: "",
   },

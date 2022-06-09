@@ -58,7 +58,9 @@ export const IntroContent = (
 export const SkillContent = (
   <div style={{ display: "flex", flexWrap: "wrap" }}>
     <div style={{ margin: "1em" }}>
-      <h2>Programming</h2>
+      <h2>
+        <u>Programming</u>
+      </h2>
       <h3>
         <ul>
           <li>C/C++ </li>
@@ -72,7 +74,9 @@ export const SkillContent = (
     </div>
 
     <div style={{ margin: "1em" }}>
-      <h2>IDE</h2>
+      <h2>
+        <u>IDE</u>
+      </h2>
       <h3>
         <ul>
           <li>Visual Studios </li>
@@ -82,7 +86,9 @@ export const SkillContent = (
       </h3>
     </div>
     <div style={{ margin: "1em" }}>
-      <h2>Microsoft Office</h2>
+      <h2>
+        <u>Microsoft Office</u>
+      </h2>
       <h3>
         <ul>
           <li>Word</li>
@@ -92,7 +98,9 @@ export const SkillContent = (
       </h3>
     </div>
     <div style={{ margin: "1em" }}>
-      <h2>Game Engines</h2>
+      <h2>
+        <u>Game Engines</u>
+      </h2>
       <h3>
         <ul>
           <li>Unreal Engine</li>
@@ -101,7 +109,9 @@ export const SkillContent = (
       </h3>
     </div>
     <div style={{ margin: "1em" }}>
-      <h2>Video/Image Manipulation</h2>
+      <h2>
+        <u>Video/Image Manipulation</u>
+      </h2>
       <h3>
         <ul>
           <li>DaVinci Resolve</li>
@@ -111,7 +121,9 @@ export const SkillContent = (
       </h3>
     </div>
     <div style={{ margin: "1em" }}>
-      <h2>3D</h2>
+      <h2>
+        <u>3D</u>
+      </h2>
       <h3>
         <ul>
           <li>Blender</li>
@@ -121,7 +133,9 @@ export const SkillContent = (
       </h3>
     </div>
     <div style={{ margin: "1em" }}>
-      <h2>Art/Drawing</h2>
+      <h2>
+        <u>Art/Drawing</u>
+      </h2>
       <h3>
         <ul>
           <li>Paint Tool SAI</li>

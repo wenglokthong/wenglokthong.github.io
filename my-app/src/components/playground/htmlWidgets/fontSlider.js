@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import "./playground.css";
+import "../playground.css";
 export const FontSlider = (props) => {
   const [value, setValue] = useState(16);
 

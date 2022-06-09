@@ -25,7 +25,7 @@ const MyRoutes = (
 
         <Route path="/components/tictactoe" element={<Game />} />
         <Route path="/components/aboutme" element={<AboutMe />} />
-        <Route path="/components/playground" element={<Playground />} />
+        <Route path="/components/playground/*" element={<Playground />} />
         <Route
           path="/components/universitygameprojects/*"
           element={<UniversityGameProjects />}

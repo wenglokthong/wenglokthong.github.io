@@ -1,6 +1,5 @@
 import "./navbar.css";
 import { MyHomeButton, MyBackButton } from "../@helpers/buttons/button";
-import { useState } from "react";
 import { ContentCollapsible } from "../@helpers/content/contentcollapsible";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -9,10 +8,9 @@ export const NavBar = () => {
     <ContentCollapsible
       title={<MenuIcon fontSize="large" />}
       style={{
-        position: "absolute",
+        position: "fixed",
         bottom: "0%",
         left: "0%",
-        position: "fixed",
         zIndex: "1000",
       }}
       contentStyle={{
