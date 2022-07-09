@@ -3,7 +3,7 @@ import { MyHomeButton } from "../@helpers/buttons/button";
 import { PDFShower } from "../@helpers/pdf/pdfshower.js";
 import { TabPanelContent } from "../@helpers/tabs/tabpanelcontent";
 
-import { IntroContent, NerdContent, SkillContent } from "./content";
+import { IntroContent, HobbiesContent, SkillContent } from "./content";
 import "./aboutme.css";
 import "../../index.css";
 
@@ -13,7 +13,7 @@ const tabsArray = [
   { name: "Intro", content: IntroContent },
 
   { name: "Skills", content: SkillContent },
-  { name: "Nerd section", content: NerdContent },
+  { name: "Hobbies", content: HobbiesContent },
   {
     name: "Resume",
     content: (
