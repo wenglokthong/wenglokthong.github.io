@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.68003ff0.css",
-    "main.js": "/static/js/main.21f00b2a.js",
+    "main.js": "/static/js/main.d4cf2366.js",
     "static/media/RapidRideFight_InGame02-min.png": "/static/media/RapidRideFight_InGame02-min.3f9dbe9b1c16b3b34180.png",
     "static/media/RapidRideFight_InGame06-min.png": "/static/media/RapidRideFight_InGame06-min.4766f9affd0d92f3de1b.png",
     "static/media/RapidRideFight_InGame03-min.png": "/static/media/RapidRideFight_InGame03-min.810d59a3e7501d72b1c7.png",
@@ -43,10 +43,10 @@
     "static/media/ragnarok1.png": "/static/media/ragnarok1.3fa403a2f979dadd190c.png",
     "index.html": "/index.html",
     "main.68003ff0.css.map": "/static/css/main.68003ff0.css.map",
-    "main.21f00b2a.js.map": "/static/js/main.21f00b2a.js.map"
+    "main.d4cf2366.js.map": "/static/js/main.d4cf2366.js.map"
   },
   "entrypoints": [
     "static/css/main.68003ff0.css",
-    "static/js/main.21f00b2a.js"
+    "static/js/main.d4cf2366.js"
   ]
 }
