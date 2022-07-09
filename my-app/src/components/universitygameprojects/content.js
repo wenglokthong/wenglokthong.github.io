@@ -419,6 +419,13 @@ export const RRRImages = [
 export const RRRText = (
   <div style={{ fontSize: "1em" }}>
     <div>
+      <a
+        href="https://www.youtube.com/watch?v=bge3fiypg5U&ab_channel=ChuRuiHeng"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Watch the trailer here!
+      </a>
       <br />
       <br />
       Rapid Ride Fight is a 3D Capture the Flag, 4v4 networked multiplayer,
