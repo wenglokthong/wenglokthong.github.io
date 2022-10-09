@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.68003ff0.css",
-    "main.js": "/static/js/main.d132abc4.js",
+    "main.js": "/static/js/main.fe5bd6b3.js",
     "static/media/RapidRideFight_InGame02-min.png": "/static/media/RapidRideFight_InGame02-min.3f9dbe9b1c16b3b34180.png",
     "static/media/RapidRideFight_InGame06-min.png": "/static/media/RapidRideFight_InGame06-min.4766f9affd0d92f3de1b.png",
     "static/media/RapidRideFight_InGame03-min.png": "/static/media/RapidRideFight_InGame03-min.810d59a3e7501d72b1c7.png",
@@ -11,7 +11,6 @@
     "static/media/RapidRideFight_InGame05-min.png": "/static/media/RapidRideFight_InGame05-min.c51e8549862ed660908c.png",
     "static/media/RapidRideFight_InGame04-min.png": "/static/media/RapidRideFight_InGame04-min.943de383f22683dca1f7.png",
     "static/media/GlowingUnder8.PNG": "/static/media/GlowingUnder8.8e62aa08afe9ca1fdce6.PNG",
-    "static/media/GlowingUnder3.PNG": "/static/media/GlowingUnder3.f17af5ac86ac999a75f9.PNG",
     "static/media/GlowingUnder4.PNG": "/static/media/GlowingUnder4.57c3133ebeb71f506a1b.PNG",
     "static/media/GlowingUnder5.PNG": "/static/media/GlowingUnder5.118c1d0624d4b48f9587.PNG",
     "static/media/GlowingUnder6.PNG": "/static/media/GlowingUnder6.d01f5f0dc35b7cdf162e.PNG",
@@ -31,6 +30,7 @@
     "static/media/RapidRideFight_Editor04-min.png": "/static/media/RapidRideFight_Editor04-min.d66765366e48a0bcd79a.png",
     "static/media/RapidRideFight_Editor02-min.png": "/static/media/RapidRideFight_Editor02-min.367a5f1bf2b652506c8f.png",
     "static/media/zeroday4.png": "/static/media/zeroday4.38f4a28f3ab05ced4199.png",
+    "static/media/zeroday5.png": "/static/media/zeroday5.91097fa87ff7212fe1e1.png",
     "static/media/Internship_Resume.pdf": "/static/media/Internship_Resume.1d5b1cf7d6b52ce0f121.pdf",
     "static/media/RapidRideFight_Editor06-min.png": "/static/media/RapidRideFight_Editor06-min.82bb8a7eb9ef382604fc.png",
     "static/media/zeroday1.png": "/static/media/zeroday1.b9a6d51b2c863e163d6d.png",
@@ -39,14 +39,20 @@
     "static/media/RapidRideFight_Editor05-min.png": "/static/media/RapidRideFight_Editor05-min.ff68991a90218701e2c7.png",
     "static/media/zeroday2.png": "/static/media/zeroday2.ba9e0ea60a22d1b83adc.png",
     "static/media/ragnarok2.png": "/static/media/ragnarok2.4d811b1d0d6f8c76bfa3.png",
+    "static/media/ragnarok4.png": "/static/media/ragnarok4.895444aa1dab8390632d.png",
     "static/media/ragnarok3.png": "/static/media/ragnarok3.30e4a81650d24e8e39e3.png",
+    "static/media/GlowingUnder3.PNG": "/static/media/GlowingUnder3.36453a03da3d649bb1ef.PNG",
+    "static/media/GlowingUnder11.PNG": "/static/media/GlowingUnder11.638adaafe50f7d390e72.PNG",
+    "static/media/GlowingUnder12.PNG": "/static/media/GlowingUnder12.2d816f2e166eb2e7a76e.PNG",
+    "static/media/ragnarok5.png": "/static/media/ragnarok5.9dfb5213d303b69749f5.png",
+    "static/media/GlowingUnder10.PNG": "/static/media/GlowingUnder10.aac74611a6a4374099ba.PNG",
     "static/media/ragnarok1.png": "/static/media/ragnarok1.3fa403a2f979dadd190c.png",
     "index.html": "/index.html",
     "main.68003ff0.css.map": "/static/css/main.68003ff0.css.map",
-    "main.d132abc4.js.map": "/static/js/main.d132abc4.js.map"
+    "main.fe5bd6b3.js.map": "/static/js/main.fe5bd6b3.js.map"
   },
   "entrypoints": [
     "static/css/main.68003ff0.css",
-    "static/js/main.d132abc4.js"
+    "static/js/main.fe5bd6b3.js"
   ]
 }
