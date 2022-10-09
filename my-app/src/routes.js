@@ -3,10 +3,11 @@ import { Routes, Route } from "react-router-dom";
 
 //COMPONENTS
 import { NavBar } from "./components/navbar/navbar.js";
-import { Game } from "./components/tictactoe/index.js";
-import { AboutMe } from "./components/aboutme/aboutme.js";
-import { Playground } from "./components/playground/playground.js";
-import { UniversityGameProjects } from "./components/universitygameprojects/universitygameprojects";
+import { Game } from "./components/menu_components/tictactoe/index.js";
+import { AboutMe } from "./components/menu_components/aboutme/aboutme.js";
+import { Playground } from "./components/menu_components/playground/playground.js";
+import { UniversityGameProjects } from "./components/menu_components/universitygameprojects/universitygameprojects";
+import { UniversityOtherProjects } from "./components/menu_components/universityotherprojects/universityotherproject.js";
 
 const MyRoutes = (
   <>
@@ -23,12 +24,16 @@ const MyRoutes = (
       <Routes>
         <Route path="/" element={<Homepage />} />
 
-        <Route path="/components/tictactoe" element={<Game />} />
-        <Route path="/components/aboutme" element={<AboutMe />} />
-        <Route path="/components/playground/*" element={<Playground />} />
+        <Route path="/tictactoe" element={<Game />} />
+        <Route path="/aboutme" element={<AboutMe />} />
+        <Route path="/playground/*" element={<Playground />} />
         <Route
-          path="/components/universitygameprojects/*"
+          path="/universitygameprojects/*"
           element={<UniversityGameProjects />}
+        />
+        <Route
+          path="/universityotherprojects/*"
+          element={<UniversityOtherProjects />}
         />
       </Routes>
     </div>

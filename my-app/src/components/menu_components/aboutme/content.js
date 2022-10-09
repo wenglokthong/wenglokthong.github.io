@@ -1,9 +1,6 @@
 import "./content.css";
-import { ContentCollapsible } from "../@helpers/content/contentcollapsible";
-import ArrowDropDown from "@mui/icons-material/ArrowDropDown";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "./aboutme.css";
-import linkedinlogo from "../../assets/images/linkedin-logo.png";
 export const IntroContent = (
   <div>
     <h1>

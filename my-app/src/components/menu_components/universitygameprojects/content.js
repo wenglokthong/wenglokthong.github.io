@@ -1,14 +1,22 @@
 export const RagnarokImages = [
   {
-    imgSrc: require("../../assets/images/digipengampictures/ragnarok1.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/ragnarok1.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/ragnarok2.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/ragnarok2.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/ragnarok3.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/ragnarok3.png"),
+    imgInfo: "",
+  },
+  {
+    imgSrc: require("../../../assets/images/digipengampictures/ragnarok4.png"),
+    imgInfo: "",
+  },
+  {
+    imgSrc: require("../../../assets/images/digipengampictures/ragnarok5.png"),
     imgInfo: "",
   },
 ];
@@ -77,19 +85,19 @@ export const RagnarokText = (
 
 export const ZeroDayImages = [
   {
-    imgSrc: require("../../assets/images/digipengampictures/zeroday/zeroday1.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/zeroday/zeroday1.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/zeroday/zeroday2.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/zeroday/zeroday2.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/zeroday/zeroday3.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/zeroday/zeroday3.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/zeroday/zeroday4.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/zeroday/zeroday4.png"),
     imgInfo: "",
   },
 ];
@@ -186,39 +194,39 @@ export const ZeroDayText = (
 
 export const GlowingUnderImages = [
   {
-    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder1.PNG"),
+    imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder1.PNG"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder2.PNG"),
+    imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder2.PNG"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder3.PNG"),
+    imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder3.PNG"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder4.PNG"),
+    imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder4.PNG"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder5.PNG"),
+    imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder5.PNG"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder6.PNG"),
+    imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder6.PNG"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder7.PNG"),
+    imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder7.PNG"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder8.PNG"),
+    imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder8.PNG"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder9.PNG"),
+    imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder9.PNG"),
     imgInfo: "",
   },
 ];
@@ -330,88 +338,88 @@ export const GLowingUnderText = (
 
 export const RRRImages = [
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_MenuScreen-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_MenuScreen-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_StartScreen-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_StartScreen-min.png"),
     imgInfo: "",
   },
 
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame00-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame00-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame01-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame01-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame02-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame02-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame03-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame03-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame04-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame04-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame05-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame05-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame06-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame06-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame07-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame07-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame08-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame08-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame09-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame09-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame10-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame10-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame11-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame11-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame12-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame12-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_Editor01-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_Editor01-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_Editor02-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_Editor02-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_Editor03-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_Editor03-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_Editor04-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_Editor04-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_Editor05-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_Editor05-min.png"),
     imgInfo: "",
   },
   {
-    imgSrc: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_Editor06-min.png"),
+    imgSrc: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_Editor06-min.png"),
     imgInfo: "",
   },
 ];

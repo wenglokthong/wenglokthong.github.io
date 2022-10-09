@@ -1,19 +1,18 @@
 import React from "react";
-import { MyHomeButton } from "../@helpers/buttons/button";
-import { PDFShower } from "../@helpers/pdf/pdfshower.js";
-import { TabPanelContent } from "../@helpers/tabs/tabpanelcontent";
+import { MyHomeButton } from "../../@helpers/buttons/button";
+import { PDFShower } from "../../@helpers/pdf/pdfshower.js";
+import { TabPanelContent } from "../../@helpers/tabs/tabpanelcontent";
 
-import { IntroContent, HobbiesContent, SkillContent } from "./content";
+import { IntroContent, SkillContent } from "./content";
 import "./aboutme.css";
-import "../../index.css";
+import "../../../index.css";
 
-import resumepdf from "../../assets/pdf/Internship_Resume.pdf";
+import resumepdf from "../../../assets/pdf/Internship_Resume.pdf";
 
 const tabsArray = [
   { name: "Intro", content: IntroContent },
 
   { name: "Skills", content: SkillContent },
-  { name: "Hobbies", content: HobbiesContent },
   {
     name: "Resume",
     content: (

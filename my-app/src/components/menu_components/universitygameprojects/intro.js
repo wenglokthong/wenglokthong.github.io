@@ -1,9 +1,9 @@
 import "./universitygameprojects.css";
 import React from "react";
-import { MyHomeButton } from "../@helpers/buttons/button.js";
+import { MyHomeButton } from "../../@helpers/buttons/button.js";
 import { Link } from "react-router-dom";
 
-const parentRoutePath = "/components/universitygameprojects/";
+const parentRoutePath = "/universitygameprojects/";
 
 const GameSectionsLinkArray = [
   {
@@ -11,28 +11,28 @@ const GameSectionsLinkArray = [
     brief:
       "Ragnarok is a top-down shooter made using ASCII graphics. Shoot enemies, collect powerups, and survive as long as possible for the highest score!",
     linkName: "GAM100: Ragnarok",
-    thumbnailPath: require("../../assets/images/digipengampictures/ragnarok2.png"),
+    thumbnailPath: require("../../../assets/images/digipengampictures/ragnarok2.png"),
   },
   {
     routePath: parentRoutePath + "zeroday",
     brief:
       "A 2D multi-directional fast paced shooter game where the player takes control of a digital virus and journey through progressively harder stages filled with enemies that require specific clear conditions.",
     linkName: "GAM150: ZER0-DAY",
-    thumbnailPath: require("../../assets/images/digipengampictures/zeroday/zeroday2.png"),
+    thumbnailPath: require("../../../assets/images/digipengampictures/zeroday/zeroday2.png"),
   },
   {
     routePath: parentRoutePath + "glowingunder",
     brief:
       "A cinematic puzzle platformer about a restless firefly who journeys underground to rescue a baby firefly and find out what he’s living for.",
     linkName: "GAM200/250: Glowing Under",
-    thumbnailPath: require("../../assets/images/digipengampictures/GlowingUnder/GlowingUnder1.PNG"),
+    thumbnailPath: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder1.PNG"),
   },
   {
     routePath: parentRoutePath + "rapidridefight",
     brief:
       "Pilot a high-speed jet boat and brawl in a destructive battle revolving around teamplay and navigational abilities set in a dystopian future Singapore.",
     linkName: "GAM300/350: Rapid Ride Fight",
-    thumbnailPath: require("../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame07-min.png"),
+    thumbnailPath: require("../../../assets/images/digipengampictures/rapidridefight/RapidRideFight_InGame07-min.png"),
   },
 ];
 
@@ -79,11 +79,11 @@ export class UniversityGameProjectsIntro extends React.Component {
         <div
           style={{
             display: "flex",
-            flexDirection: "row",
             flexWrap: "wrap",
             textAlign: "left",
             maxWidth: "100vw",
-            justifyContent: "left",
+            justifyContent: "center",
+            margin: "2em",
           }}
         >
           {GameSectionsLinkArray.map((element, index) => {

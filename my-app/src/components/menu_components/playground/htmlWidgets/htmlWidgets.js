@@ -1,7 +1,7 @@
 import React from "react";
 import { FontSlider } from "./fontSlider";
 import { ScreenModeChanger } from "./screenModeChanger";
-import { MyHomeButton } from "../../@helpers/buttons/button";
+import { MyHomeButton } from "../../../@helpers/buttons/button";
 import "../playground.css";
 
 export class HTMLWidgets extends React.Component {

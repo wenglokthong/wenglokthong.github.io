@@ -3,12 +3,6 @@ import styled from "styled-components";
 // import { useState, useRef } from "react";
 
 import { ButtonGroupLinks } from "../@helpers/buttons/buttongrouplinks";
-import { MyButton } from "../@helpers/buttons/button";
-
-const StyledLink = styled(Link)`
-  display: block;
-  margin: 1em;
-`;
 
 // const HoverContentAnimationStart = keyframes`
 // 0%{opacity:0}
@@ -40,75 +34,33 @@ const StyledLink = styled(Link)`
 //   animation-fill-mode: both;
 // `;
 
-const HomepageLinksStyled = styled.div`
-  text-align: center;
-`;
-
 const HomePageLinksArray = [
   {
-    path: "/components/aboutme",
+    path: "/aboutme",
     name: "About Me",
     hoverContent: "",
   },
   {
-    path: "/components/universitygameprojects/intro",
+    path: "/universitygameprojects/intro",
     name: "University Game Projects",
     hoverContent: "",
   },
   {
-    path: "/components/tictactoe",
+    path: "/universityotherprojects/intro",
+    name: "University Other Projects",
+    hoverContent: "",
+  },
+  {
+    path: "/tictactoe",
     name: "Tic Tac Toe",
     hoverContent: "",
   },
   {
-    path: "/components/playground/homepage",
+    path: "/playground/homepage",
     name: "Playground",
     hoverContent: "",
   },
 ];
-
-const HomepageLink = (props) => {
-  // const [isHover, setIsHover] = useState(false);
-  // const [isShowHoverContent, setIsShowHoverContent] = useState(false);
-  // const [xy, setXY] = useState({ x: 0, y: 0 });
-  // const myRef = useRef();
-
-  // const getPos = () => {
-  //   setXY({ x: myRef.current.offsetLeft, y: myRef.current.offsetTop });
-  // };
-
-  return (
-    <>
-      <StyledLink
-        //ref={myRef}
-        to={props.path}
-        onMouseEnter={() => {
-          // setIsHover(true);
-          // if (!isShowHoverContent) setIsShowHoverContent(true);
-          // getPos();
-        }}
-        onMouseLeave={() => {
-          //setIsHover(false);
-        }}
-      >
-        <MyButton name={props.buttonName} />
-      </StyledLink>
-
-      {/* {isShowHoverContent && (
-        <HoverContentStyled
-          x={xy.x}
-          y={xy.y}
-          isHover={isHover}
-          onAnimationEnd={() => {
-            if (!isHover) setIsShowHoverContent(false);
-          }}
-        >
-          {props.hoverContent}
-        </HoverContentStyled>
-      )} */}
-    </>
-  );
-};
 
 export const HomepageLinks = () => {
   return (
