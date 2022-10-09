@@ -1,23 +1,23 @@
 export const RagnarokImages = [
   {
     imgSrc: require("../../../assets/images/digipengampictures/ragnarok1.png"),
-    imgInfo: "",
+    imgInfo: "Main Menu",
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/ragnarok2.png"),
-    imgInfo: "",
+    imgInfo: "Gameplay",
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/ragnarok3.png"),
-    imgInfo: "",
+    imgInfo: 'Starting "cutscene"',
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/ragnarok4.png"),
-    imgInfo: "",
+    imgInfo: "Instructions page",
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/ragnarok5.png"),
-    imgInfo: "",
+    imgInfo: "Example of powerup drop",
   },
 ];
 
@@ -27,9 +27,8 @@ export const RagnarokText = (
       Ragnarok is an ASCII graphics top down shooter game, developed using basic
       C language in a team of four within the span of about 2 months.
       <div style={{ marginTop: "1em" }} />
-      This was quite a small project, and everyone in the team was new to
-      gamedev and coding at that time, so there was not much going on other than
-      getting the grasp of C programming.
+      This was quite a small project, with everyone in the team new to gamedev
+      and coding at that point in time
     </div>
     <div style={{ marginTop: "1em" }}>
       <u style={{ fontWeight: "bold" }}>About the game</u>
@@ -64,21 +63,18 @@ export const RagnarokText = (
         Contributions
         <ul>
           <li>Managing team progress and taskings</li>
-          <li>Gameplay logic</li>
-          <li>Ad hoc taskings</li>
+          <li>Project file management</li>
+          <li>
+            Gameplay features
+            <ul>
+              <li>AI behaviour</li>
+              <li>Player movement</li>
+              <li>Player firing</li>
+              <li>Overall mechanics</li>
+            </ul>
+          </li>
         </ul>
       </div>
-      <div
-        style={{
-          marginTop: "1em",
-          fontWeight: "bold",
-          textDecoration: "underline",
-        }}
-      >
-        Post Mortem
-      </div>
-      To be honest, I can't really remember any significant ups or downs during
-      the course of this project, but it was fun nonetheless.
     </div>
   </div>
 );
@@ -86,19 +82,23 @@ export const RagnarokText = (
 export const ZeroDayImages = [
   {
     imgSrc: require("../../../assets/images/digipengampictures/zeroday/zeroday1.png"),
-    imgInfo: "",
+    imgInfo: "Main Menu",
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/zeroday/zeroday2.png"),
-    imgInfo: "",
+    imgInfo: "Mission display",
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/zeroday/zeroday3.png"),
-    imgInfo: "",
+    imgInfo: "Gameplay",
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/zeroday/zeroday4.png"),
-    imgInfo: "",
+    imgInfo: "Boss fight",
+  },
+  {
+    imgSrc: require("../../../assets/images/digipengampictures/zeroday/zeroday5.png"),
+    imgInfo: "Mission failed",
   },
 ];
 
@@ -108,8 +108,8 @@ export const ZeroDayText = (
       ZER0-DAY (yes, it is spelled with a numerical zero) is a 2D pixel art
       styled, top down shooter game developed using C/C++ in a team of four,
       within a span of about 3 months. <div style={{ marginTop: "1em" }} />
-      This was the first 'real' 2D game project, with 2D rendering support from
-      an external library provided by the module (using opnGL under the hood).
+      This was a 2D game project with rendering support from an external library
+      provided by the module (using openG).
     </div>
     <div style={{ marginTop: "1em" }}>
       <u style={{ fontWeight: "bold" }}>About the game</u>
@@ -165,29 +165,19 @@ export const ZeroDayText = (
         Contributions
         <ul>
           <li>Managing team progress and taskings</li>
-          <li>Gameplay logic</li>
-          <li>AI behaviour</li>
+          <li>
+            Gameplay features
+            <ul>
+              <li>AI behaviour</li>
+              <li>Player movement</li>
+              <li>Abilities</li>
+              <li>Mission mechanics</li>
+            </ul>
+          </li>
+
           <li>Architecture</li>
-          <li>Ad hoc taskings</li>
         </ul>
       </div>
-      <div
-        style={{
-          marginTop: "1em",
-          fontWeight: "bold",
-          textDecoration: "underline",
-        }}
-      >
-        Post Mortem
-      </div>
-      Rough start due to inexperience with using C-styled libraries (AlphaEngine
-      was a blackbox and the documentation was <s>horrible</s> not enough) and
-      game programming. We managed to get something working out only at around
-      the half sem point, and the rest of the semester was spent throwing
-      everything together and duct-taping our game up.
-      <br />
-      Suprisingly, we managed to produce something satisfactory (to us). <br />
-      Rough but memorable project!
     </div>
   </div>
 );
@@ -195,39 +185,51 @@ export const ZeroDayText = (
 export const GlowingUnderImages = [
   {
     imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder1.PNG"),
-    imgInfo: "",
+    imgInfo: "Main menu",
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder2.PNG"),
-    imgInfo: "",
+    imgInfo: "Pause menu",
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder3.PNG"),
-    imgInfo: "",
+    imgInfo: "Environmental storytelling",
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder4.PNG"),
-    imgInfo: "",
+    imgInfo: "Gameplay",
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder5.PNG"),
-    imgInfo: "",
+    imgInfo: "Village scene",
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder6.PNG"),
-    imgInfo: "",
+    imgInfo: "Dialogue bubble",
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder7.PNG"),
-    imgInfo: "",
+    imgInfo: "Editor tiling feature",
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder8.PNG"),
-    imgInfo: "",
+    imgInfo: "Editor debugging feature",
   },
   {
     imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder9.PNG"),
-    imgInfo: "",
+    imgInfo: "Editor graph feature",
+  },
+  {
+    imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder10.PNG"),
+    imgInfo: "Hints",
+  },
+  {
+    imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder11.PNG"),
+    imgInfo: "Platforming puzzle",
+  },
+  {
+    imgSrc: require("../../../assets/images/digipengampictures/GlowingUnder/GlowingUnder12.PNG"),
+    imgInfo: "Environmental entities",
   },
 ];
 
@@ -262,8 +264,7 @@ export const GLowingUnderText = (
       </ul>
       <u style={{ fontWeight: "bold" }}>Development</u>
       <br />
-      It's hard to list down every single feature and aspect of the project, so
-      I will only list down notable ones.
+      Some notable features...
       <ul>
         <li>
           Custom Engine
@@ -311,28 +312,27 @@ export const GLowingUnderText = (
         <br />
         Contributions
         <ul>
-          <li>Setting up custom physics system in the game</li>
-          <li>Gameplay mechanics</li>
-          <li>Ad hoc taskings</li>
+          <li>
+            Setting up custom physics system in the game
+            <ul>
+              <li>AABB and OBB collision detection and resolution</li>
+              <li>Box,Circle,Polygon collider shapes support</li>
+              <li>Broad phase and narrow phase optimization</li>
+              <li>Forces and gravity</li>
+            </ul>
+          </li>
+          <li>
+            Gameplay features
+            <ul>
+              <li>Player movement (walking, boosting, flying)</li>
+              <li>Player ability</li>
+              <li>AI behaviour</li>
+              <li>Environmental mechanics</li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
-    <div
-      style={{
-        marginTop: "1em",
-        fontWeight: "bold",
-        textDecoration: "underline",
-      }}
-    >
-      Post Mortem
-    </div>
-    Overall, it was a new experience working with designers and artists that
-    were not from our course. The journey was fun with a great team.
-    <br />
-    Learnt alot about 2D physics, especially when I had to set up the physics
-    system from scratch. (For anyone who is interested in learning 2D physics,
-    google 'Randy Ghaul' or 'Erin Catto', they write very good articles and
-    tutorials).
   </div>
 );
 
@@ -460,8 +460,7 @@ export const RRRText = (
       </ul>
       <u style={{ fontWeight: "bold" }}>Development</u>
       <br />
-      It's hard to list down every single feature and aspect of the project, so
-      I will only list down notable ones.
+      Some notable features...
       <ul>
         <li>
           Custom Engine Architecture
@@ -520,45 +519,24 @@ export const RRRText = (
         Contributions
         <ul>
           <li>
-            Setting up and integrating PhysX into the engine{" "}
+            Physics
             <ul>
-              <li>Setting up the physics system</li>
+              <li>Setting up the physics system using PhysX API</li>
               <li>Syncing PhysX and ECS components together</li>
+              <li>"Water physics"</li>
             </ul>
           </li>
-          <li>Gameplay scripting using C#</li>
+          <li>
+            Gameplay scripting using C#
+            <ul>
+              <li>Player movement (normal, drift, stuns)</li>
+              <li>Player abilities (shield, missle, boost)</li>
+              <li>Dynamic camera (smoothed motions, collision detection)</li>
+            </ul>
+          </li>
           <li>Extending the Particle System</li>
-          <li>Ad hoc taskings</li>
         </ul>
       </div>
     </div>
-    <div
-      style={{
-        marginTop: "1em",
-        fontWeight: "bold",
-        textDecoration: "underline",
-      }}
-    >
-      Post Mortem
-    </div>
-    3D development is definitely an eye opener for me, and I am fortunate to be
-    able to work with such a great team.
-    <br />
-    <br />
-    <b>Physics</b>
-    <br />
-    Although I was able to 'outsource' the physics to the PhysX library,
-    integrating it together with ECS was the challenge, as the nature of the
-    library and our framework was different. I had to split the concept of a
-    PhysX object into multiple components (for ECS architecture), and sync them
-    together with our own engine components. 3D physics was fun though (of
-    course with the help of an external library)
-    <br />
-    <br />
-    <b>Scripting</b>
-    <br />
-    Having never touched C# before, it was a good opportunity for me to learn it
-    as I scripted the gameplay logic for the game. I also learned how the Mono
-    framework linked C++ and C# together.
   </div>
 );
