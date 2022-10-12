@@ -21,15 +21,15 @@ export const IntroContent = (
       several 2D and 3D game projects, using both commercial and custom game
       engines.
       <br />
-      <br />I have an interest of how things work under the hood, which was my
-      reason of pursuing engineering in the first place. Hence, as an avid
-      gamer, I wanted to know how games are built, which led to my pursue in
-      Computer Science and Game Design.
+      <br />
+      My interest in programming started when I was undertaking a basic C
+      programming module during the course of my engineering diploma. Since I
+      was also into gaming at that period of time, I decided to give game
+      programming a try in DigiPen.
       <br />
       <br />
       Having almost completed my degree, my next step is to expand my technical
-      skillsets and explore other areas of the technical industry. My goal is to
-      learn and improve towards being a full stack developer. <br /> <br />
+      skillsets and explore other areas of the technical industry. <br /> <br />
       Click to go to my LinkedIn profile! (opens up a new window)
       <br />
     </h2>

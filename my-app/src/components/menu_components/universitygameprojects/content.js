@@ -52,15 +52,14 @@ export const RagnarokText = (
         </li>
         <li>
           No complex algorithms in this project, everything was done by
-          iterative loops or hardcoding. There was no need to optimize anything
-          anyway since the project was so small.
+          iterative loops or hardcoding.
         </li>
       </ul>
       <u style={{ fontWeight: "bold" }}>Role and contribution</u>
       <div>
         Official Role: Producer <br />
         <br />
-        Contributions
+        Some Contributions
         <ul>
           <li>Managing team progress and taskings</li>
           <li>Project file management</li>
@@ -141,18 +140,13 @@ export const ZeroDayText = (
           </ul>
         </li>
         <li>State machine to transition between levels</li>
-        <li>
-          Object pooling for all entities
-          <ul>
-            <li>All entities share the same pool</li>
-          </ul>
-        </li>
+        <li>Object pooling for all entities</li>
         <li>Spritesheet UV iteration for animation</li>
         <li>Enemy AI</li>
         <li>
           2D collision
           <ul>
-            <li>AABB collision checking (no OBB though)</li>
+            <li>AABB collision checking</li>
           </ul>
         </li>
         <li>FMod for audio</li>
@@ -162,7 +156,7 @@ export const ZeroDayText = (
         Official Role: Producer
         <br />
         <br />
-        Contributions
+        Some Contributions
         <ul>
           <li>Managing team progress and taskings</li>
           <li>
@@ -175,7 +169,13 @@ export const ZeroDayText = (
             </ul>
           </li>
 
-          <li>Architecture</li>
+          <li>
+            General
+            <ul>
+              <li>Level code</li>
+              <li>Helper functions</li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
@@ -310,7 +310,7 @@ export const GLowingUnderText = (
         Official Role: Physics and Collision Champion
         <br />
         <br />
-        Contributions
+        Some Contributions
         <ul>
           <li>
             Setting up custom physics system in the game
@@ -448,7 +448,6 @@ export const RRRText = (
     <div style={{ marginTop: "1em" }}>
       <u style={{ fontWeight: "bold" }}>About the game</u>
       <ul>
-        <li></li>
         <li>4v4 Capture the flag</li>
         <li>
           Play with others across a dedicated server or locally against AI. Or
@@ -495,7 +494,7 @@ export const RRRText = (
           <ul>
             <li>UI rendering</li>
             <li>Fonts</li>
-            <li>Particles (billboard style)</li>
+            <li>Particles (2D billboard)</li>
             <li>...</li>
           </ul>
         </li>
@@ -509,6 +508,7 @@ export const RRRText = (
           </ul>
         </li>
         <li>SLikenet for networking</li>
+        <li>Versatile particle system</li>
         <li>Fmod for 2D and 3D audio</li>
       </ul>
       <u style={{ fontWeight: "bold" }}>Role</u>
@@ -516,7 +516,7 @@ export const RRRText = (
         Official Role: Physics and Collision Champion
         <br />
         <br />
-        Contributions
+        Some Contributions
         <ul>
           <li>
             Physics

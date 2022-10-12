@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { MyBackButton } from "../../../@helpers/buttons/button";
 
 import "./randomPicker.css";
 
@@ -96,6 +97,9 @@ export const RandomPicker = () => {
             </span>
           );
         })}
+      </div>
+      <div style={{ marginTop: "1em" }}>
+        <MyBackButton />
       </div>
     </div>
   );

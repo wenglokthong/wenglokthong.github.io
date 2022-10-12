@@ -117,7 +117,7 @@ export class Game extends React.Component {
         <div>
           <h1>React TicTacToe</h1>
           <p>
-            This simple game of tictactoe is literally the tutorial of React (
+            This simple game of tictactoe is based from the tutorial of React (
             <a
               href="https://reactjs.org/tutorial/tutorial.html"
               target="_blank"

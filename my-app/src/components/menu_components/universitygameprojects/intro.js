@@ -47,7 +47,7 @@ const summary = (
     >
       DigiPen GAM projects
     </div>
-    <p style={{ fontSize: "1.2em" }}>
+    <div style={{ fontSize: "1.2em" }}>
       This section is a collection of the game projects I have done in my course
       of university. These game projects (abbreviated as{" "}
       <i>
@@ -58,9 +58,8 @@ const summary = (
       module's requirements in terms of technical, design and art (if any) .
       <div style={{ marginTop: "1em" }} />
       Below are the links that redirect you to individual pages of the projects
-      in detail, coupled together with my own thoughts and experiences. Do check
-      them out!
-    </p>
+      in detail. Do check them out!
+    </div>
   </>
 );
 

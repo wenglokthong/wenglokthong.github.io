@@ -45,7 +45,7 @@ export const GameSectionArray = [
 
 export const GameImageSlider = (images) => {
   return (
-    <div className="image-slider">
+    <div className="image-slider" style={{ width: "100%", maxWidth: "800px" }}>
       <AliceCarousel
         autoPlay={true}
         animationDuration={400}
@@ -54,7 +54,12 @@ export const GameImageSlider = (images) => {
       >
         {images.map((arrayElement, index) => {
           return (
-            <div style={{ display: "flex", flexDirection: "column" }}>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
               <img
                 key={index}
                 className="image-single"
@@ -75,7 +80,7 @@ export const GameImageSlider = (images) => {
 export function GameSection(props) {
   return (
     props && (
-      <div>
+      <div style={{ width: "100%" }}>
         <div className="game-header">{props.gameHeader}</div>
         <div>{GameImageSlider(props.gameImages)}</div>
         <div
