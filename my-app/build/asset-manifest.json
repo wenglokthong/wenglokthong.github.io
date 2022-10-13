@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.68003ff0.css",
-    "main.js": "/static/js/main.03c54f41.js",
+    "main.js": "/static/js/main.471621f4.js",
     "static/media/RapidRideFight_InGame02-min.png": "/static/media/RapidRideFight_InGame02-min.3f9dbe9b1c16b3b34180.png",
     "static/media/RapidRideFight_InGame06-min.png": "/static/media/RapidRideFight_InGame06-min.4766f9affd0d92f3de1b.png",
     "static/media/RapidRideFight_InGame03-min.png": "/static/media/RapidRideFight_InGame03-min.810d59a3e7501d72b1c7.png",
@@ -33,7 +33,7 @@
     "static/media/RapidRideFight_Editor02-min.png": "/static/media/RapidRideFight_Editor02-min.367a5f1bf2b652506c8f.png",
     "static/media/zeroday4.png": "/static/media/zeroday4.38f4a28f3ab05ced4199.png",
     "static/media/zeroday5.png": "/static/media/zeroday5.91097fa87ff7212fe1e1.png",
-    "static/media/Internship_Resume.pdf": "/static/media/Internship_Resume.1d5b1cf7d6b52ce0f121.pdf",
+    "static/media/Internship_Resume.pdf": "/static/media/Internship_Resume.e601e5e9434bf9448e6c.pdf",
     "static/media/MaxThong_DES396_S22_Assignment2-49.jpg": "/static/media/MaxThong_DES396_S22_Assignment2-49.1b89f5e1a8f93676ed27.jpg",
     "static/media/t.wenglokmax_DES396_S22_Assignment3-04.jpg": "/static/media/t.wenglokmax_DES396_S22_Assignment3-04.296b5570d64f5d2b8eb3.jpg",
     "static/media/RapidRideFight_Editor06-min.png": "/static/media/RapidRideFight_Editor06-min.82bb8a7eb9ef382604fc.png",
@@ -88,10 +88,10 @@
     "static/media/ragnarok1.png": "/static/media/ragnarok1.3fa403a2f979dadd190c.png",
     "index.html": "/index.html",
     "main.68003ff0.css.map": "/static/css/main.68003ff0.css.map",
-    "main.03c54f41.js.map": "/static/js/main.03c54f41.js.map"
+    "main.471621f4.js.map": "/static/js/main.471621f4.js.map"
   },
   "entrypoints": [
     "static/css/main.68003ff0.css",
-    "static/js/main.03c54f41.js"
+    "static/js/main.471621f4.js"
   ]
 }

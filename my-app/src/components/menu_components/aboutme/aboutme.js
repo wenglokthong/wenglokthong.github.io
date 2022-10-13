@@ -16,12 +16,28 @@ const tabsArray = [
   {
     name: "Resume",
     content: (
-      <PDFShower
-        isNeedButton={false}
-        pdfobject={resumepdf}
-        pagesArray={[1, 2]}
-        pdfName={"Resume"}
-      />
+      <div>
+        <PDFShower
+          isNeedButton={false}
+          pdfobject={resumepdf}
+          pagesArray={[1, 2]}
+          pdfName={"Resume"}
+        />
+        <div style={{ textAlign: "center" }}>
+          <h3>
+            <a
+              href={resumepdf}
+              download={"ThongWengLokMax_Resume.pdf"}
+              target="_blank"
+            >
+              Download a copy
+            </a>
+          </h3>
+        </div>
+        <br />
+        <br />
+        <br />
+      </div>
     ),
   },
 ];
